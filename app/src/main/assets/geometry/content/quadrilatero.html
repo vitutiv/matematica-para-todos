@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles_night.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <script defer src="../../js/jquery.min.js"></script>
+    <script defer src="../../js/bootstrap.min.js"></script>
+    <script defer src="../js/geometry.js"></script>
+    <script defer src="../../js/app/appscript.js"></script>
+    <script>
+        var estadoRetangulo = false;
+        var estadoLosango = false;
+        var estadoQuadrado = false;
+        var estadoTrapezio = false;
+        function changeState(nomeForma) {
+            var estadoAtual;
+            if (nomeForma === 'losango') {
+                estadoAtual = estadoLosango;
+                estadoLosango = !estadoLosango;
+            } else if (nomeForma === 'retangulo') {
+                estadoAtual = estadoRetangulo;
+                estadoRetangulo = !estadoRetangulo;
+            } else if (nomeForma === 'quadrado') {
+                estadoAtual = estadoQuadrado;
+                estadoQuadrado = !estadoQuadrado;
+            } else {
+                estadoAtual = estadoTrapezio;
+                estadoTrapezio = !estadoTrapezio;
+            }
+
+            if (estadoAtual) {
+                event.target.src = 'img/' + nomeForma + '/' + nomeForma + '.svg';
+            } else {
+                event.target.src = 'img/' + nomeForma + '/' + nomeForma + '1.svg';
+            }
+        }
+    </script>
+    <title>Quadriláteros</title>
+</head>
+
+<body class="geometry">
+    <header>
+        <div class="wrapper">
+            <canvas id="geometric"></canvas>
+            <div class="accent green-sea"></div>
+        </div>
+        <nav>
+            <button onclick="location.href='../../index.html'">Início</button>
+            <button onclick="location.href='../index.html'">Espaço e Forma</button>
+            <button onclick="location.href='poligono.html'">Polígonos</button>
+            <button disabled>Quadriláteros</button>
+        </nav>
+    </header>
+    <main>
+        <p>Quadriláteros são todos polígonos que possuem 4 lados.
+            Existem quadrilatéros não convexos e convexos.
+            Os quadriláteros convexos se dividem em duas categorias: paralelogramos e trapézios.
+        </p>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Paralelogramos</h2>
+                <p>Os paralelogramos são quadriláteros que possuem os seus lados opostos paralelos.</p>
+                <h6>Retângulo</h6>
+                <p>Um retângulo é um quadrilátero que tem 4 ângulos internos, todos retos (90 graus).
+                </p>
+                <figure>
+                    <img src="img/retangulo/retangulo.svg" onclick="changeState('retangulo');" />
+                    <figcaption>Imagem: Retângulo azul.</figcaption>
+                </figure>
+                <h6>Losango</h6>
+                <p>.</p>
+                <figure>
+                    <img src="img/losango/losango.svg" onclick="changeState('losango');" />
+                    <figcaption>Imagem: Losango vermelho.</figcaption>
+                </figure>
+                <div class="card">
+                    <img src="img/bandeiraDoBrasil.svg" style="margin:0;padding:0" class="card-img-top" />
+                    <div class="card-body">    
+                        <h2>Curiosidade</h2>
+                        <p>A bandeira do Brasil possui um losango amarelo. Atualmente, a sua cor simboliza as riquezas do nosso país. Porém, nem sempre foi assim. Na época do império, quando a bandeira ainda não era a que conhecemos hoje, o amarelo na bandeira simbolizava a casa de Hasburgo, uma das casas reais da família de D. Pedro I.</p>
+                    </div>
+                </div>
+                <h6>Quadrado</h6>
+                <p>
+                    Um quadrado também é um quadrilátero de 4 ângulos internos retos, o que quer dizer que <b>todo quadrado é um retângulo.</b> Além disso,<b>todo quadrado é um losango.</b>
+                    Devido a essas duas características, <b>Todos os lados do quadrado têm a mesma medida.</b>
+                </p>    
+                <figure>
+                    <img src="img/quadrado/quadrado.svg" onclick="changeState('quadrado');" />
+                    <figcaption>Imagem: Quadrado amarelo.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Trapézios</h2>
+                <p class="card-text">Um trapézio se diferencia de um paralelogramo porque só existem dois lados paralelos neles</p>
+                <figure>
+                    <img src="img/trapezio/trapezio.svg" onclick="changeState('trapezio');" />
+                    <figcaption>Imagem: Trapézio verde.</figcaption>
+                </figure>
+            </div>
+        </div>
+        <h2>Referências</h2>
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="https://mundoeducacao.bol.uol.com.br/matematica/paralelogramos.htm">
+                Paralelogramos; Mundo Educação.
+                <span class="text-muted">Acesso: 27 de dezembro de 2018.</span>
+            </a>
+            <a class="list-group-item list-group-item-action" href="https://mundoeducacao.bol.uol.com.br/matematica/quadrilateros.htm">
+                Quadriláteros; Mundo Educação.
+                <span class="text-muted">Acesso: 27 de dezembro de 2018.</span>
+            </a>
+            <a class="list-group-item list-group-item-action" href="https://www.todamateria.com.br/retangulo/">Retângulo; Todamatéria.
+                <span class="text-muted">Acesso: 27 de dezembro de 2018.</span>
+            </a>
+            <a class="list-group-item list-group-item-action" href="https://www.significados.com.br/bandeira-do-brasil/">
+                Bandeira do Brasil; Significados.
+                <span class="text-muted">Acesso: 27 de dezembro de 2018.</span>
+            </a>
+        </div>
+    </main>
+    </body>
+</html>

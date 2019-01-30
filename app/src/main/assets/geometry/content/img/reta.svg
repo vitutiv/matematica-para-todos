@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit Evaluation Version) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="512px" height="51px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 329.35 33.01"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="632" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Open Sans">
+		<font-face-src>
+			<font-face-name name="Open Sans"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="s" horiz-adv-x="476" d="M431.123 145.824c0,-49.8267 -18.6779,-88.3446 -55.6653,-115.327 -37.1574,-27.0107 -89.1665,-40.5019 -156.311,-40.5019 -70.8287,0 -126.154,11.1671 -165.976,33.6713l0 75.3352c25.8203,-13.0094 53.3128,-23.3545 82.8177,-30.837 29.5049,-7.51085 57.8194,-11.1671 85.1418,-11.1671 42.3442,0 74.825,6.83062 97.6694,20.3218 22.816,13.4912 34.1531,34.0114 34.1531,61.674 0,20.832 -8.98467,38.6596 -27.1524,53.4829 -17.9977,14.8233 -53.1711,32.3392 -105.662,52.4909 -49.8267,18.6779 -85.1418,34.8333 -106.144,48.6646 -21.002,13.8313 -36.6756,29.5049 -46.8223,47.1625 -10.3451,17.4875 -15.3335,38.4895 -15.3335,62.9777 0,43.6763 17.6576,77.9994 53.1428,103.338 35.5136,25.1684 84.1498,37.8377 145.994,37.8377 57.4792,0 113.825,-11.6772 168.81,-35.1734l-28.8246 -65.9821c-53.6813,22.1641 -102.318,33.1611 -145.824,33.1611 -38.4895,0 -67.4843,-6.00868 -86.9841,-17.9977 -19.4999,-12.1874 -29.3348,-28.6829 -29.3348,-49.8267 0,-14.3415 3.65622,-26.5005 10.997,-36.6756 7.34079,-10.005 19.1597,-19.6699 35.4852,-28.8246 16.1838,-9.01302 47.5026,-22.3341 93.673,-39.5099 63.4879,-23.1561 106.314,-46.4822 128.648,-69.8084 22.3341,-23.4962 33.5012,-53.0011 33.5012,-88.4863z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Open Sans";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str1 {stroke:#373435;stroke-width:1.93;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str0 {stroke:#373435;stroke-width:1.93;stroke-linejoin:bevel;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil1 {fill:#373435}
+    .fnt0 {font-weight:normal;font-size:26.8px;font-family:'Open Sans'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <line class="fil0 str0" x1="329.32" y1="10.33" x2="0.04" y2= "10.33" />
+  <line class="fil0 str1" x1="328.67" y1="10.33" x2="319.03" y2= "19.98" />
+  <line class="fil0 str1" x1="328.67" y1="10.33" x2="319.03" y2= "0.68" />
+  <text x="297.12" y="32.74"  class="fil1 fnt0">s</text>
+  <line class="fil0 str1" x1="0.68" y1="10.33" x2="10.33" y2= "19.98" />
+  <line class="fil0 str1" x1="0.68" y1="10.33" x2="10.33" y2= "0.68" />
+ </g>
+</svg>

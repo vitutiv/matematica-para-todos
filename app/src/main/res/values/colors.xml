@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //Default
+    <color name="colorPrimary">#242424</color>
+    <color name="colorPrimaryDark">#111111</color>
+    <color name="colorAccent">#111111</color>
+
+    //Numbers
+    <color name="numbersColorPrimary">#297fb8</color>
+    <color name="numbersPrimaryDark">#1a5276</color>
+
+    //NumericOperations
+    <color name="numericOperationsColorPrimary">#3497da</color>
+    <color name="numericOperationsPrimaryDark">#22628b</color>
+
+    //Space
+    <color name="geometryColorPrimary">#26a69a</color>
+    <color name="geometryColorPrimaryDark">#00897b</color>
+
+    //Measures
+    <color name="scalesColorPrimary">#27ad60</color>
+    <color name="scalesColorPrimaryDark">#196f3e</color>
+
+    //Graphs
+    <color name="infoTreatmentColorPrimary">#679e38</color>
+    <color name="infoTreatmentColorPrimaryDark">#426624</color>
+
+    <color name="correctAnswer">#4caf50</color>
+    <color name="wrongAnswer">#f44336</color>
+</resources>

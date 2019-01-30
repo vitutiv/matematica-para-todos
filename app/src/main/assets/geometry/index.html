@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_night.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <script defer src="../js/jquery.min.js"></script>
+    <script defer src="../js/bootstrap.min.js"></script>
+    <script defer src="js/geometry.js"></script>
+    <script defer src="../js/app/appscript.js"></script>
+    <title>Espaço e Forma</title>
+</head>
+
+<body class="container-fluid geometry">
+    <header class="green-sea">
+        <div class="wrapper">
+            <canvas id="geometric" height="100">
+            </canvas>
+            <div class="accent green-sea"></div>
+        </div>
+        <nav>
+            <button onclick="location.href='../index.html'">Início</button>
+            <button disabled>Espaço e Forma</button>
+        </nav>
+    </header>
+    <main class="row">
+        <div class="col-12 mt-0 mb-2 p-2 card card-body">
+            <h2 class="my-3">Noções Básicas</h2>
+            
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/intro.html'" class="btn-block">Introdução</button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" aria-expanded="false" data-target="#resumoIntro"></button>
+            </div>
+            <div class="collapse my-1" id="resumoIntro">
+                <a href="content/ponto.html" class="d-block">
+                    Em espaço e forma, nós estudamos uma parte da matemática que é chamada de Geometria. A palavra
+                    "geometria" é a junção de duas palavras gregas: geo = terra e metria = medida, ou seja, medida da
+                    Terra.
+                </a>
+            </div>
+
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/ponto.html'" class="btn-block">
+                    <span>Ponto</span>
+                </button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" aria-expanded="false"
+                    data-target="#resumoPontos"></button>
+            </div>
+            <div class="collapse my-1" id="resumoPontos">
+                <a href="content/ponto.html" class="d-block">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, deserunt.
+                </a>
+            </div>
+            
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/reta.html'" class="btn-block">Reta</button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" data-target="#resumoRetas"></button>
+            </div>
+            <div class="collapse my-1" id="resumoRetas">
+                <a href="content/reta.html" class="d-block">
+                    Para a matemática, a reta é formada por infinitos pontos. Ela é infinita em ambos os sentidos e não
+                    tem começo ou fim.
+                </a>
+            </div>
+            
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/plano.html'" class="btn-block">Plano</button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" data-target="#resumoPlano"></button>
+            </div>
+            <div class="collapse my-1" id="resumoPlano">
+                <a href="content/plano.html" class="d-block">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, vero.
+                </a>
+            </div>
+
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/angulo.html'" class="btn-block">Ângulo</button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" data-target="#resumoAngulo"></button>
+            </div>            
+            <div class="collapse my-1" id="resumoAngulo">
+                <a href="content/angulo.html" class="d-block">
+                    Duas semirretas com a mesma origem, e que não pertencem a mesma reta, formam um ângulo. A origem é
+                    chamada de vértice do ângulo. As semirretas são os lados.
+                </a>
+            </div>
+
+            <h2 class="my-3">Polígonos</h2>
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/poligono.html'" class="btn-block">Introdução a Polígonos</button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" data-target="#resumoPoligonos"></button>
+            </div>
+            <div class="collapse my-1" id="resumoPoligonos">
+                <a href="content/poligono.html" class="d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, quis.</a>
+            </div>
+
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/poligono_convexo.html'" class="btn-block">Polígonos Convexos</button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" data-target="#resumoConvexos"></button>
+            </div>
+            <div class="collapse my-1" id="resumoConvexos">
+                <a href="content/poligono_convexo.html" class="d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, quis.</a>
+            </div>
+
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/triangulo.html'" class="btn-block">Triângulos</button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" data-target="#resumoTriangulos"></button>
+            </div>
+            <div class="collapse my-1" id="resumoTriangulos">
+                    <a href="content/triangulo.html" class="d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, quis.</a>
+            </div>
+            
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/quadrilatero.html'" class="btn-block">Quadriláteros</button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" data-target="#resumoQuadrilateros"></button>
+            </div>
+            <div class="collapse my-1" id="resumoQuadrilateros">
+                <a href="content/quadrilatero.html" class="d-block">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, quis.
+                </a>
+            </div>
+
+            <h2 class="my-3">Cálculos</h2>
+            
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/perimetro.html'" class="btn-block">Perímetro</button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" data-target="#resumoPerimetro"></button>
+            </div>
+            <div class="collapse my-1" id="resumoPerimetro">
+                <a href="content/perimetro.html" class="d-block">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, quis.
+                </a>
+            </div>
+
+            <div class="btn-group my-1">
+                <button onclick="location.href='content/area.html'" class="btn-block">Área</button>
+                <button class="dropdown-toggle dropdown-toggle-split" data-toggle="collapse" data-target="#resumoArea"></button>
+            </div>
+            <div class="collapse my-1" id="resumoArea">
+                <a href="content/area.html" class="d-block">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, quis.
+                </a>
+            </div>
+        </div>
+        <div class="col-12 my-2 p-2 card card-body">
+            <h2 class="my-3">Figuras espaciais</h2>
+            <button onclick="location.href='content/solido_geometrico.html'" class="btn-block">Introdução a Sólidos
+                Geométricos</button>
+            <button onclick="location.href='content/solido_geometrico.html'" class="btn-block">Poliedros</button>
+            <button onclick="location.href='content/solido_geometrico.html'" class="btn-block">Corpos Redondos</button>
+            <button onclick="location.href='content/solido_geometrico.html'" class="btn-block">Outros</button>
+        </div>
+        <div class="col-12 my-2 p-2 card card-body">
+            <h2 class="my-3">Animações</h2>
+            <button onclick="location.href='games/game1/game1.html'" class="btn-block">Quiz das formas geométricas</button>
+        </div>
+        <div class="col12 my-2 p-2 card card-body">
+            <h2 class="my-3">Jogos</h2>
+            <button onclick="location.href='games/game1/game1.html'" class="btn-block">Quiz das formas geométricas</button>
+        </div>
+    </main>
+</body>
+
+</html>

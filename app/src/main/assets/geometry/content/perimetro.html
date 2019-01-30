@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles_night.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <script defer src="../../js/jquery.min.js"></script>
+    <script defer src="../../js/bootstrap.min.js"></script>
+    <script defer src="../js/geometry.js"></script>
+    <script defer src="../../js/app/questioncards.js"></script>
+    <script defer src="../../js/app/appscript.js"></script>
+    <title>Perímetro</title>
+</head>
+
+<body class="geometry">
+    <header>
+        <div class="wrapper">
+            <canvas id="geometric"></canvas>
+            <div class="accent green-sea"></div>
+        </div>
+        <nav>
+            <button onclick="location.href='../../index.html'">Início</button>
+            <button onclick="location.href='../index.html'">Espaço e Forma</button>
+            <button disabled>Perímetro</button>
+        </nav>
+    </header>
+    <main>
+        <p>
+            O perímetro é a medida que tem o contorno de uma figura plana.
+        </p>
+        <h2>Perímetro dos polígonos</h2>
+        <p>O perímetro dos pológonos é obtido através da soma de todos os seus lados.</p>
+        <div class="card">
+            <div class="card-header">    
+                <h2>Exemplo</h2>
+            </div>
+            <div class="card-body">
+                <p>O campo de futebol da imagem possui 60 metros de comprimento e 100 metros de largura. Qual o seu perímetro?</p>
+                <figure>
+                    <img src="img/campofutebol.svg" onclick="changeState('convexo')" />
+                    <figcaption>Imagem do campo de futebol e as suas medidas.</figcaption>
+                </figure>
+            </div>
+            <div class="card-footer">
+                <button class="btn-block" data-toggle="collapse" data-target="#resposta" onclick="toggle()">Mostrar Resposta</button>
+                <div id="resposta" class="collapse" style="padding: 10px;">
+                    <h2>Resposta</h2>
+                    <p><b>Somando as medidas dos lados da imagem:</b> 60 + 100 + 60 + 100 = <b>320</b>. <br/>
+                        O perímetro do campo de futebol é 320 metros.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2>Perímetro de um círculo</h2>
+        <p>O perímetro do círculo, também chamado de comprimento da circunferência, 2 pi raio</p>
+        <h2>Referências</h2>
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="https://mundoeducacao.bol.uol.com.br/matematica/perimetro.htm">Perímetro; Mundo Educação.
+                <span class="text-muted">Acesso em 03 de dezembro de 2018.</span>
+            </a>
+            <a class="list-group-item list-group-item-action" href="https://www.todamateria.com.br/area-e-perimetro/">Área e
+                Perímetro; TodaMatéria.
+                <span class="text-muted">Acesso em 05 de janeiro de 2019.</span>
+            </a>
+            </a>
+            <p class="list-group-item">
+                SOBRENOME1, AUTOR1; SOBRENOME2, AUTOR2. TÍTUO. Geometria Plana. Vol. X. LOCAL:EDITORA, ANO.
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
