@@ -1,27 +1,33 @@
  @charset "utf-8";
-/* CSS Document */
+ /* CSS Document */
 
-body {
-    background-color: black;
-}
+ body {
+     background-color: black;
+ }
 
-/*Testing purposes */
-canvas{
-    border: 1px solid black;
-}
-body,h1 {
-    color: #f9f9f9;
-}
+ /*Testing purposes */
 
-.nightshift{
-    filter: invert(100);
-}
+ canvas {
+     border: 1px solid black;
+ }
 
-.card, .list-group-item, table, tr{
-    background-color: #1d2124;
-    border-color: #333
-}
+ body, h1 {
+     color: #f9f9f9;
+ }
 
-.list-group-item:hover{
-    background-color: #222
-}
+ .nightshift {
+     filter: invert(100);
+ }
+
+ .card, .list-group-item, table, tr {
+    background-color: #212529;
+    border-color: #32383e
+ }
+
+ .table td, .table th, .table thead th {
+     border-color: #32383e
+ }
+
+ .list-group-item:hover {
+     background-color: #222
+ }

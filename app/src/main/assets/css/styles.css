@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @font-face {
     font-family: 'Boogaloo';
     src: url('../ttf/Boogaloo-Regular.ttf') format('truetype')
@@ -13,7 +12,7 @@
 body {
     background-color: white;
     font-family: 'Open Sans', sans-serif;
-    margin:0;
+    margin: 0;
     height: auto;
     padding: 0;
     word-wrap: break-word;
@@ -33,63 +32,76 @@ header {
     z-index: 2
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
+    margin: 2rem 0;
     font-weight: normal;
     text-align: center
 }
-
+p{
+    padding: 1rem;
+}
 h1 {
     text-align: center;
-    font-size: 175%;
+    /*font-size: 175%;
+    */
     width: 100%
 }
-h2{
-    font-size: 150%;
-    width: 100%;
+
+h2 {
+    /*font-size: 150%;*/
+    width: 100%
 }
-h6{
+
+h3 {
+    /*font-size: 120%;*/
+    text-align: start;
+}
+
+h6 {
     font-weight: bold;
     text-align: start
 }
+
 button {
     background-color: rgba(0, 0, 0, .2);
     background-position: center;
     background-repeat: no-repeat;
-    border: 0;
+    border: none;
     border-bottom: 2px solid rgba(0, 0, 0, .1);
     box-shadow: inset 0 -2px rgba(0, 0, 0, .1);
     color: white;
     cursor: pointer;
-    font-family: 'Boogaloo','Open-Sans', cursive;
+    font-family: 'Boogaloo', 'Open-Sans', cursive;
     font-size: 125%;
     margin: 0;
     min-height: fit-content;
-    padding: 20px;
+    padding: 1.25rem;
     position: relative;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.25);
     transition: all .4s ease-in-out;
     user-select: none
 }
-button img{
+
+button img {
     background: rgba(0, 0, 0, .1);
     height: max-content;
-    margin:0 10px 0 0;
-    padding:0;
+    margin: 0 10px 0 0;
+    padding: 0;
     transition: 0s;
-    width:max-content
+    width: max-content
 }
 
-button label{
+button label {
     align-items: center;
     font-size: 125%;
-    line-height: 100px;
+    line-height: 8rem;
     height: inherit;
     width: 100%
 }
 
-button:hover{
-    background-color: rgba(0,0,0,.5)
+button:hover {
+    background-color: rgba(0, 0, 0, .5)
 }
 
 .btn-block:hover {
@@ -99,28 +111,28 @@ button:hover{
 
 button:active {
     box-shadow: none;
-    top: 1px
-}
-button:hover{
-    background-color: rgba(0,0,0,.5)
+    top: .1rem
 }
 
+button:hover {
+    background-color: rgba(0, 0, 0, .5)
+}
 
 .picture {
     display: block;
-    margin: 5px auto
+    margin: .3rem auto
 }
 
 a {
     color: #c0392b;
 }
 
-.no-padding{
+.no-padding {
     padding: 0;
 }
 
 .canvas-opcao {
-    box-shadow: inset 0 0 0 4px white, inset 0 0 0 5px #ccc;
+    box-shadow: inset 0 0 0 .25rem white, inset 0 0 0 .3rem #ccc;
     box-sizing: border-box
 }
 
@@ -141,7 +153,7 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
-    padding: 10px;
+    padding: .5rem;
     white-space: nowrap;
     z-index: 100;
 }
@@ -149,32 +161,31 @@ nav {
 nav button {
     border-style: solid;
     border-color: rgba(0, 0, 0, .2);
-    border-width: 2px;
+    border-width: .2rem;
     font-size: 100%;
     display: inline-block;
     font-family: 'Open Sans';
-    margin: 2px;
-    padding: 8px 10px;
+    margin: .2rem;
+    padding: .5rem .6rem;
     box-shadow: none
 }
 
-.row{
+.row {
     height: fit-content;
 }
 
 img {
     display: block;
     height: 100%;
-    margin:10px auto;
-    padding: 10px;
     width: 100%
 }
 
-figure{
-    margin: 0;
+figure {
+    margin: 2rem auto;
     padding: 0
 }
-figcaption{
+
+figcaption {
     font-style: italic;
     font-size: 90%;
     text-align: center
@@ -192,8 +203,7 @@ figcaption{
     z-index: -1
 }
 
-
-main{
+main {
     padding: 10px;
     position: relative;
     top: 70px
@@ -215,67 +225,73 @@ main{
 .carrot {
     background-color: #e67e22
 }
-.about main button, main .about,
-.pumpkin {
+
+.about main button, main .about, .pumpkin {
     background-color: #d35400
 }
+
 .alizarin {
     background-color: #e74c3c
 }
+
 .pomegranate {
     background-color: #c0392b
 }
+
 .turquoise {
     background-color: #1abc9c
 }
-.geometry main button, main .geometry,
-.green-sea {
+
+.geometry main button, main .geometry, .green-sea {
     background-color: #16a085
 }
+
 .geometry .btn-block:hover, .geometry .dropdown-toggle.dropdown-toggle-split {
     background-color: #149077;
     box-shadow: none;
     color: white;
 }
 
-.dropdown-toggle.dropdown-toggle-split{
+.dropdown-toggle.dropdown-toggle-split {
     background-color: rgba(0, 0, 0, .1);
-    border:none;
+    border: none;
     box-shadow: none;
     position: absolute;
     right: 0
 }
-.geometry h2,.geometry a{
+
+.geometry h2, .geometry a {
     color: #16a085
 }
+
 .emerald {
     background-color: #2ecc71
 }
-.scales main button,
-main .scales,
-.scales header,
-.nephritis{
+
+.scales main button, main .scales, .scales header, .nephritis {
     background-color: #27ae60
 }
 
-.scales h2,
-.scales a {
+.scales h2, .scales a {
     color: #27ae60;
 }
-.numericOperations main button, main .numericOperations,
-.peter-river {
+
+.numericOperations main button, main .numericOperations, .peter-river {
     background-color: #3498db
 }
-.numericOperations h2, .numericOperations a{
+
+.numericOperations h2, .numericOperations a {
     color: #3498db
 }
-.numbers main button, main .numbers,
-.belize-hole {
+
+.numbers main button, main .numbers, .belize-hole {
     background-color: #2980b9
 }
-.numbers h2, .numbers a{
+
+.numbers h2, .numbers a {
     color: #2980b9
 }
+
 .amethyst {
     background-color: #9b59b6
 }
@@ -290,11 +306,12 @@ main .scales,
 
 /* #CUSTOM Button
 ==================================================*/
-.graphs main button, main .graphs,
- .soldier-green {
+
+.graphs main button, main .graphs, .soldier-green {
     background-color: #689f38
 }
-.graphs h2, .graphs a{
+
+.graphs h2, .graphs a {
     color: 689f38;
 }
 
@@ -345,10 +362,11 @@ main .scales,
     width: 100%
 }
 
-.card{
-    margin: 20px 0
+.card {
+    margin: 20px auto;
+    padding: 0;
 }
 
-.no-b-radius{
+.no-b-radius {
     border-radius: 0
 }

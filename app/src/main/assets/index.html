@@ -2,36 +2,95 @@
 <html lang="pt-br">
 <head>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet/less" href="css/homepage.less">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="css/styles_night.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script defer src="js/jquery.min.js"></script>
+	<script defer src="js/bootstrap.min.js"></script>
+	<script defer src="js/less.min.js"></script>
 	<script defer src="js/app/appscript.js"></script>
-	<script defer src="anim1.js"></script>
+	<script defer src="js/app/homepage.js"></script>
 	<title>Matemática para Todos</title>
 </head>
-<body class="container-fluid">
-	<header style="background-color: #263238">
-		<div class="wrapper">
-			<canvas id="geometric">
-			</canvas>
-			<div class="accent" style="background-color: #263238"></div>
+<body id="start-page">
+	<div class="header">Matemática para <br>Todos</div>
+	<div class="search">
+		<div class="search-form">
+			<i class="fas fa-search"></i>
+			<input type="text" oninput="search()" class="main-search" name="" value="">
+			<button class="clear-button"><i class="fas fa-times-circle clear-input"></i></button>
 		</div>
-		<nav>
-			<button disabled>Início</a>
-		</nav>
-	</header>
-	<main class="row">
-		<button onclick="location.href='numbers/index.html'" class="numbers btn-block">Números
-		</button>
-		<button onclick="location.href='operations/index.html'" class="numericOperations btn-block">Operações Numéricas</b>
-		<button onclick="location.href='geometry/index.html'" class="geometry btn-block">Espaço e Forma</button>
-		<button onclick="location.href='scales/index.html'" class="scales btn-block">Grandezas e Medidas</button>
-		<button onclick="location.href='graphs/index.html'" class="graphs btn-block">Tratamento da Informação</button>
-		<button onclick="location.href='games/game1.html'" class="sun-flower btn-block">Quiz Geral</button>
-		<button onclick="location.href='about.html'" class="about btn-block">Sobre</button>
-	</main>
+		<a id="search-demo" class="search-result">
+			<div class="content-1 content-icon"></div>
+			<div class="info">
+				<div class="theme">Formas Geométricas</div>
+				<span class="name">Onde vivem?</span>
+			</div>
+		</a>
+		<div class="search-results">
+		</div>
+	</div>
+	<div class="contents">
+		<div class="content content-1">
+			<div class="content-background"></div>
+			<div class="content-wrapper">
+				<div class="content-wrapper-header">
+					<a data-toggle="collapse" href="#content-1-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
+						<i class="fas fa-plus-circle"></i>
+						<span class="title">Formas Geométricas</span>
+					</a>
+				</div>
+				<div id="content-1-collapse" class="collapse">
+					<ul>
+						<li><a href="">O que são?</a></li>
+						<li><a href="">Onde vivem?</a></li>
+						<li><a href="">Como se reproduzem?</a></li>
+						<li><a href="">De que se alimentam?</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content content-2">
+			<div class="content-background"></div>
+			<div class="content-wrapper">
+				<div class="content-wrapper-header">
+					<a data-toggle="collapse" href="#content-2-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
+						<i class="fas fa-plus-circle"></i>
+						<span class="title">Formas Geométricas</span>
+					</a>
+				</div>
+				<div id="content-2-collapse" class="collapse">
+					<ul>
+						<li><a href="">O que são?</a></li>
+						<li><a href="">Onde vivem?</a></li>
+						<li><a href="">Como se reproduzem?</a></li>
+						<li><a href="">De que se alimentam?</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content content-3">
+			<div class="content-background "></div>
+			<div class="content-wrapper">
+				<div class="content-wrapper-header">
+					<a data-toggle="collapse" href="#content-3-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
+						<i class="fas fa-plus-circle"></i>
+						<span class="title">Formas Geométricas</span>
+					</a>
+				</div>
+				<div id="content-3-collapse" class="collapse">
+					<ul>
+						<li><a href="">O que são?</a></li>
+						<li><a href="">Onde vivem?</a></li>
+						<li><a href="">Como se reproduzem?</a></li>
+						<li><a href="">De que se alimentam?</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

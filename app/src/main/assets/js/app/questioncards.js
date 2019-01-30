@@ -1,4 +1,5 @@
 var isShown = false;
+var isRight=false;
 function toggle() {
     isShown = !isShown;
     if (isShown) {
@@ -10,7 +11,10 @@ function toggle() {
 
 function paintRight() {
     event.target.style.border = '2px solid #66bb6a';
+    isRight = true;
 }
 function paintWrong() {
-    event.target.style.border = '2px solid #ef5350';
+    if (!isRight){
+        event.target.style.border = '2px solid #ef5350';
+    }
 }

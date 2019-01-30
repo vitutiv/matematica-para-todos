@@ -46,10 +46,10 @@
         </nav>
     </header>
     <main>
-        <p>A palavra polígono vem das palavras gregas <b>polú</b> = muitos e <b>gonos</b> que significa ângulos.
+        <p>A palavra polígono vem das palavras gregas <b>πολυ (poli)</b> = muitos e <b>γωνο (gono)</b> que significa ângulo.
         O polígono é uma <b>figura plana</b> formada apenas por linhas retas que só se cruzam nas suas “pontas”.
         </p>
-        <figure>
+        <figure class="col-12 col-md-10 col-lg-8 col-xg-4">
             <img src="img/linhas.svg" class="d-block w-100"/>
             <figcaption>Imagem: Uma linha reta e uma linha curva.</figcaption>
         </figure>
@@ -60,13 +60,21 @@
             </div>
             <div class="card-body">
                 <div class="row" style="margin: 0; padding: 0">
-                    <img src="img/estrela.svg" alt="Opção 1" class="col-6" onclick="paintWrong();"/>
-                    <img src="img/3linhas.svg" alt="Opção 2" class="col-6" onclick="paintWrong();"/>
-                    <img src="img/linhacurva.svg" alt="Opção 3" class="col-6" onclick="paintWrong();"/>
-                    <img src="img/hexagono.svg" alt = "Opção 4" class="col-6" onclick="paintRight();"/>
+                    <div class="img-container col-6 col-md-3 d-flex">
+                        <img src="img/estrela.svg" alt="Opção 1" class="img-fluid" onclick="paintWrong();"/>
+                    </div>
+                    <div class="img-container col-6 col-md-3 d-flex">
+                        <img src="img/3linhas.svg" alt="Opção 2" class="img-fluid" onclick="paintWrong();"/>
+                    </div>
+                    <div class="img-container col-6 col-md-3 d-flex">
+                        <img src="img/linhacurva.svg" alt="Opção 3" class="img-fluid" onclick="paintWrong();"/>
+                    </div>
+                    <div class="img-container col-6 col-md-3 d-flex">
+                        <img src="img/hexagono.svg" alt = "Opção 4" class="img-fluid" onclick="paintRight();"/>
+                    </div>
                 </div>
             </div>
-            <div class="card-footer">
+            <div class="card-footer p-2">
                 <button class="btn-block" data-toggle="collapse" aria-expanded="false" data-target="#resposta" onclick="toggle();">Mostrar Resposta</button>
                 <div id="resposta" class="collapse" style="padding: 10px;">
                     <h2 class="card-title">Resposta</h2>
@@ -92,68 +100,72 @@
             </div>
         </div>
         <h2>Propriedades</h2>
-        <figure>
+        <figure class="col-12 col-md-8 col-lg-6 col-xg-4">
             <img src="img/poligonos/poligonos.svg" onclick="changeState('poligonos')"/>
             <figcaption>Imagem: Exemplos de polígonos</figcaption>
         </figure>
         <h2>Nomes dos polígonos</h2>
-        <table class="table table-dark">
-            <tr>
-                <th>Número de lados</th>
-                <th class="col-5"> Nome</th>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td><a href="triangulo.html">Triângulo ou trilátero</a></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td><a href="quadrilatero.html">Quadrângulo ou quadrilátero</a></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Pentágono</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Hexágono</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Heptágono</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Octógono</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>Eneágono</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>Decágono</td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td>Unecágono</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>Dodecágono</td>
-            </tr>
-            <tr>
-                <td>15</td>
-                <td>Pentadecágono</td>
-            </tr>
-            <tr>
-                <td>20</td>
-                <td>Icoságono</td>
-            </tr>
-            <tr>
-                <td>n</td>
-                <td>n - látero</td>
-            </tr>
+        <table class="table table-striped table-bordered mx-auto">
+            <thead>
+                <tr>
+                    <th>Número de lados</th>
+                    <th>Nome</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td><a href="triangulo.html">Triângulo ou trilátero</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="quadrilatero.html">Quadrângulo ou quadrilátero</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Pentágono</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Hexágono</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Heptágono</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Octógono</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Eneágono</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Decágono</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Unecágono</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Dodecágono</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Pentadecágono</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Icoságono</td>
+                </tr>
+                <tr>
+                    <td>n</td>
+                    <td>n - látero</td>
+                </tr>
+            </tbody>
         </table>
         <h2>Referências</h2>
         <div class="list-group">
