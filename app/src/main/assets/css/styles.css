@@ -1,4 +1,53 @@
-@charset "utf-8";
+:root {
+    --main-red: #d50000;
+    --main-pink: #c51162;
+    --main-purple: #aa00ff;
+    --main-deep-purple: #6200ea;
+    --main-indigo: #304ffe;
+    --main-blue: #2962ff;
+    --main-light-blue: #0091ea;
+    --main-cyan: #00b8d4;
+    --main-teal: #00bfa5;
+    --main-green: #00c853;
+    --main-light-green: #64dd17;
+    --main-lime: #aeea00;
+    --main-yellow: #ffd600;
+    --main-amber: #ffab00;
+    --main-orange: #ff6d00;
+    --main-deep-orange: #dd2c00;
+    --main-brown: #3e2723;
+    --main-grey: #212121;
+    --main-blue-grey: #263238;
+}
+
+.numbers-bg {
+    background-color: var(--main-red);
+}
+
+.numericOperations-bg {
+    background-color: var(--main-pink);
+}
+
+.geometry-bg {
+    background-color: var(--main-deep-purple);
+}
+
+.scales-bg {
+    background-color: var(--main-indigo);
+}
+
+.graphs-bg {
+    background-color: var(--main-light-blue);
+}
+
+.quizes-bg {
+    background-color: var(--main-green);
+}
+
+.about-bg {
+    background-color: var(--main-amber);
+}
+
 @font-face {
     font-family: 'Boogaloo';
     src: url('../ttf/Boogaloo-Regular.ttf') format('truetype')
@@ -37,9 +86,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     text-align: center
 }
-p{
+
+p {
     padding: 1rem;
 }
+
 h1 {
     text-align: center;
     /*font-size: 175%;
@@ -214,131 +265,6 @@ main {
     margin: 0 auto
 }
 
-.sun-flower {
-    background-color: #f1c40f
-}
-
-.orange {
-    background-color: #f39c12
-}
-
-.carrot {
-    background-color: #e67e22
-}
-
-.about main button, main .about, .pumpkin {
-    background-color: #d35400
-}
-
-.alizarin {
-    background-color: #e74c3c
-}
-
-.pomegranate {
-    background-color: #c0392b
-}
-
-.turquoise {
-    background-color: #1abc9c
-}
-
-.geometry main button, main .geometry, .green-sea {
-    background-color: #16a085
-}
-
-.geometry .btn-block:hover, .geometry .dropdown-toggle.dropdown-toggle-split {
-    background-color: #149077;
-    box-shadow: none;
-    color: white;
-}
-
-.dropdown-toggle.dropdown-toggle-split {
-    background-color: rgba(0, 0, 0, .1);
-    border: none;
-    box-shadow: none;
-    position: absolute;
-    right: 0
-}
-
-.geometry h2, .geometry a {
-    color: #16a085
-}
-
-.emerald {
-    background-color: #2ecc71
-}
-
-.scales main button, main .scales, .scales header, .nephritis {
-    background-color: #27ae60
-}
-
-.scales h2, .scales a {
-    color: #27ae60;
-}
-
-.numericOperations main button, main .numericOperations, .peter-river {
-    background-color: #3498db
-}
-
-.numericOperations h2, .numericOperations a {
-    color: #3498db
-}
-
-.numbers main button, main .numbers, .belize-hole {
-    background-color: #2980b9
-}
-
-.numbers h2, .numbers a {
-    color: #2980b9
-}
-
-.amethyst {
-    background-color: #9b59b6
-}
-
-.wisteria {
-    background-color: #8e44ad
-}
-
-.wet-asphalt {
-    background-color: #6796c5
-}
-
-/* #CUSTOM Button
-==================================================*/
-
-.graphs main button, main .graphs, .soldier-green {
-    background-color: #689f38
-}
-
-.graphs h2, .graphs a {
-    color: 689f38;
-}
-
-.midnight-blue {
-    background-color: #2c3e50
-}
-
-.clouds {
-    background-color: #ecf0f1
-}
-
-.silver {
-    background-color: #bdc3c7
-}
-
-.concrete {
-    background-color: #859596
-}
-
-.asbestos {
-    background-color: #7f8c8d
-}
-
-.graphite {
-    background-color: #454545
-}
-
 #geometric {
     border: none;
     height: 68px;
@@ -369,4 +295,8 @@ main {
 
 .no-b-radius {
     border-radius: 0
+}
+
+ul.expanded-items a {
+    padding: 1rem 0;
 }
