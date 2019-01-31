@@ -18,7 +18,7 @@ function search() {
         if (regex.test(content.name) || term === "") {
             el = $("#search-demo").clone().attr({ 'id': '', 'href': content.href });
             $(el).find(".content-icon").css('background-color', content.color);
-            $(el).find(".title").text(content.theme);
+            $(el).find(".theme").text(content.theme);
             $(el).find(".name").text(content.name);
             $(".search-results").append(el);
         }

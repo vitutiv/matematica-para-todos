@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet/less" href="css/styles.css">
+	<link rel="stylesheet/less" href="css/styles.less">
 	<link rel="stylesheet/less" href="css/homepage.less">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
 	 crossorigin="anonymous">
@@ -27,8 +27,8 @@
 		<a id="search-demo" class="search-result">
 			<div class="content-1 content-icon"></div>
 			<div class="info">
-				<div class="theme">Formas Geométricas</div>
-				<span class="name">Onde vivem?</span>
+				<div class="theme">Title</div>
+				<span class="name">Article</span>
 			</div>
 		</a>
 		<div class="search-results">
@@ -43,14 +43,14 @@
 		Quiz Geral
 		Sobre
 	-->
-	<div class="contents">
-		<div class="content numbers-bg">
+	<main class="contents">
+		<section class="content numbers-bg">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
 				<div class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-1-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Números</span>
+						<span class="title">Números</h4>
 					</a>
 				</div>
 				<div id="content-1-collapse" class="collapse">
@@ -62,14 +62,14 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="content numericOperations-bg">
+		</section>
+		<section class="content numericOperations-bg">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
 				<div class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-2-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Operações Numéricas</span>
+						<span class="title">Operações Numéricas</h4>
 					</a>
 				</div>
 				<div id="content-2-collapse" class="collapse">
@@ -82,9 +82,9 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="content geometry-bg">
-			<div class="content-background "></div>
+		</section>
+		<section class="content geometry-bg">
+			<div class="content-background"></div>
 			<div class="content-wrapper">
 				<div class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-3-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
@@ -115,8 +115,8 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="content scales-bg">
+		</section>
+		<section class="content scales-bg">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
 				<div class="content-wrapper-header">
@@ -132,14 +132,14 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="content graphs-bg">
+		</section>
+		<section class="content graphs-bg">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
 				<div class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-5-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Tratamento da Informação</span>
+						<span class="title">Tratamento da Informação</h4>
 					</a>
 				</div>
 				<div id="content-5-collapse" class="collapse">
@@ -149,35 +149,40 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="content quizes-bg">
+		</section>
+		<section class="content quizes-bg">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
 				<div class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-6-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Quizes</span>
+						<span class="title">Quizes</h4>
 					</a>
 				</div>
 				<div id="content-6-collapse" class="collapse">
 					<ul class="expanded-items">
 						<li><a href="scales/content/intro.html">Números</a></li>
+						<hr />
 						<li><a href="content/tempo.html">Operações Numéricas</a></li>
+						<hr/>
 						<li><a href="">Geometria</a></li>
+						<hr />
 						<li><a href="">Grandezas e Medidas</a></li>
+						<hr />
 						<li><a href="">Tratamento da Informação</a></li>
+						<hr />
 						<li><a href="">Geral</a></li>
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="content about-bg">
+		</section>
+		<section class="content about-bg">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
 				<div class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-7-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Sobre</span>
+						<span class="title">Sobre</h4>
 					</a>
 				</div>
 				<div id="content-7-collapse" class="collapse">
@@ -188,7 +193,7 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-	</div>
+		</section>
+	</main>
 </body>
 </html>
