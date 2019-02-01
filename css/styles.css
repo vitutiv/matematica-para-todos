@@ -21,6 +21,7 @@
     font-family: 'Open Sans';
     src: url('../ttf/OpenSans-Regular.ttf') format('truetype');
 }
+
 &:root {
     --main-red: #d50000;
     --main-pink: #c51162;
@@ -83,6 +84,7 @@
     color: @background_color_1;
   }
 }
+
 .numericOperations{
   .content-background{
     background-color: @background_color_2 !important
