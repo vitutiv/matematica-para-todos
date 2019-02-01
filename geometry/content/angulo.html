@@ -2,39 +2,55 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet/less" href="../../css/styles.less">
-    <link rel="stylesheet" href="../../css/styles_night.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles_night.css">
     <script defer src="../../js/jquery.min.js"></script>
-    <script defer src="../../js/less.min.js"></script>
-    <script defer src="../../js/app/appscript.js"></script>
     <script defer src="../../js/bootstrap.min.js"></script>
-    <title>Ângulos</title>
+    <script defer src="../../js/app/appscript.js"></script>
+    <title>Matemática para Todos</title>
 </head>
 
-<body class="geometry">
+<body id="content-page" class="geometry">
     <header>
-        <nav>
-            <a href="../../index.html" class="breadcrumb-item">Home</a>
-        <a href="#" class="breadcrumb-item active" disabled>Ângulos</a>
-        </div>
+        <!--Animation goes here-->
     </header>
-    <main>
+    <main class="container">
+        <div class="heading">
+            <div class="row">
+                <div class="col float-left">
+                    <h1 class="title" id="page-title">Ângulos</h1>
+                    <h2 class="subtitle text-muted" id="page-subtitle">Geometria</h2>
+                </div>
+                <div class="float-right">
+                    <a id="fav-action" href="#" onclick="favorite()" class="text-muted"><i class="far fa-heart fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-2" />
         <p>
-            Duas semirretas com a mesma origem, e que não pertencem a mesma reta, formam um ângulo. A origem é chamada de vértice
+            Duas semirretas com a mesma origem, e que não pertencem a mesma reta, formam um ângulo. A origem é chamada
+            de
+            vértice
             do ângulo. As semirretas são os lados.
         </p>
         <figure class="col-12 col-md-10 col-lg-6 col-xg-4">
-            <img src="img/angulos/angulos.svg" onclick="toggle();"/>
+            <img src="img/angulos/angulos.svg" onclick="toggle();" />
             <figcaption>Imagem de um ângulo.</figcaption>
         </figure>
         <p>
             O “tamanho da abertura” de um ângulo pode medido em graus (º) ou radianos.
         </p>
         <h2>Como medimos ângulos?</h2>
-        <p>Para esta tarefa, o instrumento utilizado se chama transferidor. O transferidor é um instrumento que pode ter o formato de um círculo (360º) ou de um semicírculo (180º). Para fazer medições, você deve seguir os seguintes passos:
+        <p>Para esta tarefa, o instrumento utilizado se chama transferidor. O transferidor é um instrumento que pode
+            ter o
+            formato de um círculo (360º) ou de um semicírculo (180º). Para fazer medições, você deve seguir os
+            seguintes
+            passos:
         </p>
         <ol>
             <li>Colocar o centro da base do transferidor sobre o vértice do ângulo.</li>
@@ -62,7 +78,9 @@
         </p>
         <h6>Raso</h6>
         <p>
-            O ângulo raso mede 180º. Sendo uma volta completa em um círculo 360º, o ângulo raso também pode ser chamado de meia-volta.
+            O ângulo raso mede 180º. Sendo uma volta completa em um círculo 360º, o ângulo raso também pode ser chamado
+            de
+            meia-volta.
         </p>
         <h2>Trabalhando com mais de um ângulo</h2>
         <h6>Complementares</h6>
@@ -72,7 +90,7 @@
         <h6>Congruentes</h6>
         <h6>Consecutivos</h6>
         <h6>Opostos pelo vértice</h6>
-        
+
         <h2>Referências</h2>
         <div class="list-group">
             <a class="list-group-item list-group-item-action" href="https://www.todamateria.com.br/angulos/">
