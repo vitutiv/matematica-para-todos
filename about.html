@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles_night.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="css/styles.less">
+    <link rel="stylesheet" href="css/styles_night.css">
     <script defer src="js/jquery.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
+    <script defer src="js/less.min.js"></script>
     <script defer src="js/app/appscript.js"></script>
     <title>Sobre</title>
 </head>
-<body class="container-fluid about">
-<header class="pumpkin">
-            <nav>
-                <button onclick="location.href='index.html'">Início</button>
-                <button disabled>Sobre - Matemática Para Todos</button>
-            </nav>
-    </header>
-    <figure id="watermark">
-    <img src="img/logo_ifet.svg" />
-    </figure>
+<body class="container-fluid" id="content-page">
+    <img class="watermark" src="img/logo_ifet.svg" />
     <main>
-<h1 class="my-5">Versão <span class="badge badge-pill badge-dark"> 1.01</span></h1>
+        <h1 class="my-5">Versão <span class="badge badge-pill badge-dark"> 1.01</span></h1>
         <p>
             <b>Nome do projeto:</b> A UTILIZAÇÃO DAS TICs PARA AUXILIAR NAS AULAS DE MATEMÁTICA ATRAVÉS DE UM SOFTWARE
             EDUCATIVO
@@ -38,9 +30,9 @@
         </p>
         <p>
             <b>Animações</b>
-            <br />Kelvin Lima Alves - kelvinlima.alves@gmail.com
-            <br />Felipe Rocha Torres - feliper.torres@hotmail.com
-            <br />Marcos Paulo Lopes Oliveira Rios - marcos.rios@ifba.edu.br
+            <br/>Kelvin Lima Alves - kelvinlima.alves@gmail.com
+            <br/>Felipe Rocha Torres - feliper.torres@hotmail.com
+            <br/>Marcos Paulo Lopes Oliveira Rios - marcos.rios@ifba.edu.br
         </p>
         <p>
             <b>Revisão dos textos</b>
@@ -48,26 +40,34 @@
         </p>
         <p>
             <b>Coordenadores</b>
-            <br />Beliato Santana Campos
-            <br />Ricardo Alcântara Mesquita
+            <br/>Beliato Santana Campos
+            <br/>Ricardo Alcântara Mesquita
         </p>
-        <h2>Novidades da versão <span class="badge badge-pill badge-danger">4</span> </h2>
+        <h2>Novidades da versão <span class="badge badge-pill badge-success">4</span> </h2>
         <ul>
             <li><b>Imagens interativas!</b> Ao tocar algumas imagens, elas mudam para mostrar mais detalhes da
                 explicação. Teste!</li>
             <li>Modo noturno melhor integrado com o aplicativo.</li>
             <li>Opção de desabilitar as animações para economizar energia / reduzir travamentos em dispositivos mais básicos.</li>
             <li>Agora é possível ver um resumo do conteúdo clicando na seta ao lado do botão</li>
-        </ul>
-        <h2>Encontrou algum problema?</h2>
-        <p> Por favor, envie um e-mail para
-            <a href="mailto:victor_pereira@ifba.edu.br">victor_pereira@ifba.edu.br</a> detalhando a situação, de
-            preferência com uma captura de tela do problema. Sua
-            mensagem será respondida o mais rápido possível.
-        </p>
-        <div>
-            <h2>Outros aplicativos</h2>
-            <button class="btn-block bg-dark">Física Para Todos</button>
+        </ul>            
+        <section class="content about">
+            <div class="content-background"></div>
+            <div class="content-wrapper">
+                <div class="content-wrapper-header">
+                    <a data-toggle="collapse" href="#content-1-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
+                        <i class="fas fa-plus-circle"></i>
+                        <span class="title">Outros aplicativos</h4>
+                    </a>
+                </div>
+                <div id="content-1-collapse" class="collapse">
+                    <ul class="expanded-items">
+                        <li><a href="">Física Para Todos</a></li>
+                        <hr />
+                    </ul>
+                </div>
+            </div>
+        </section>
         </div>
     </main>
 </body>

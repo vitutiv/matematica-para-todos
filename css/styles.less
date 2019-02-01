@@ -63,56 +63,87 @@
   transition: 0.2s ease;
 }
 
+.watermark {
+  left: 50%;
+  height: 220px;
+  margin-left: -83px;
+  margin-top: -70px;
+  opacity: .5;
+  position: fixed;
+  top: 50%;
+  width: 167px;
+  z-index: -1;
+}
+
 .numbers{
-  color: @background_color_1;
-  .bg{
+  .content-background{
     background-color: @background_color_1;
   }
-  .fg{
+  .content-color{
     color: @background_color_1;
   }
+}
+.numericOperations{
+  .content-background{
+    background-color: @background_color_2 !important
+  }
+  .content-color{
+    color: @background_color_2 !important
+  }
+}
+
+.geometry{
+  .content-background{
+    background-color: @background_color_3 !important
+  }
+  .content-color{
+    color: @background_color_3 !important
+  }
+}
+
+.scales {
+  .content-background{
+    background-color: @background_color_4 !important
+  }
+  .content-color{
+    color: @background_color_4 !important
+  }
+}
+
+.graphs {
+  .content-background{
+    background-color: @background_color_5 !important
+  }
+  .content-color{
+    color: @background_color_5 !important
+  }
+}
+
+.quizes {
+  .content-background{
+    background-color: @background_color_6 !important
+  }
+  .content-color{
+    color: @background_color_6 !important
+  }
+}
+
+.about {
+  .content-background{
+    background-color: @background_color_7 !important
+  }
+  .content-color{
+    color: @background_color_7 !important
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-align: center;
 }
 
 p{
   text-align: justify;
   padding: 1rem
-}
-.numericOperations{
-  .bg{
-    background-color: @background_color_2;
-  }
-  .fg{
-    color: @background_color_2; 
-  }
-}
-
-.geometry{
-  .bg, nav{
-    background-color: @background_color_3 !important
-  }
-  .fg, h1,h2,h3,h4,h5,h6 {
-    color: @background_color_3 !important;
-    outline: none;
-    text-decoration: none
-  }
-  h1,h2,h3,h4,h5,h6{
-    text-align: center !important
-  }  
-}
-.scales-bg {
-    background-color: @background_color_4;
-}
-
-.graphs-bg {
-    background-color: @background_color_5;
-}
-
-.quizes-bg {
-    background-color: @background_color_6;
-}
-
-.about-bg {
-    background-color: @background_color_7;
 }
 
 
@@ -225,15 +256,11 @@ body#start-page .content {
   overflow: hidden;
   margin-bottom: 1rem;
 }
-body#start-page .content-1 .content-background {
-  background: #f44336;
+
+a.trigger{
+  width: 100%;
 }
-body#start-page .content-2 .content-background {
-  background: #e91e63;
-}
-body#start-page .content-3 .content-background {
-  background: #9c27b0;
-}
+
 body#start-page .content-background {
   position: absolute;
   z-index: -1;
@@ -281,6 +308,9 @@ body#start-page .trigger .rotated {
 body#start-page a{
   font-size: 1.1em;
 }
+body#content-page{
+  text-align: justify !important;
+}
 
 .picture {
     display: block;
@@ -326,19 +356,6 @@ figcaption {
     text-align: center;
 }
 
-#watermark {
-    left: 50%;
-    height: 220px;
-    margin-left: -83px;
-    margin-top: -70px;
-    opacity: .5;
-    position: fixed;
-    top: 50%;
-    width: 167px;
-    z-index: -1;
-}
-
-
 #geometric {
     border: none;
     height: 68px;
@@ -362,8 +379,13 @@ figcaption {
     width: 100%;
 }
 
-ul.expanded-items {
+.expanded-items {
+    padding: 1rem;
     a {
         padding: 1rem 0;
     }
+}
+
+.breadcrumb-item:before {
+    content: "\3E"
 }
