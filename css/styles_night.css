@@ -1,33 +1,36 @@
- @charset "utf-8";
- /* CSS Document */
+@charset "utf-8";
+/* CSS Document */
 
- body {
-     background-color: black;
- }
+body {
+    background-color: #111 !important;
+}
 
- /*Testing purposes */
+.header {
+    color: #e1e1e1 !important
+}
 
- canvas {
-     border: 1px solid black;
- }
+/*Testing purposes */
+canvas {
+    border: 1px solid black;
+}
 
- body, h1 {
-     color: #f9f9f9;
- }
+body,
+h1 {
+    color: #f9f9f9;
+}
 
- .nightshift {
-     filter: invert(100);
- }
+.nightshift {
+    filter: invert(100);
+}
 
- .card, .list-group-item, table, tr {
-    background-color: #212529;
-    border-color: #32383e
- }
+.card,
+.list-group-item,
+table,
+tr {
+    background-color: #1d2124;
+    border-color: #333
+}
 
- .table td, .table th, .table thead th {
-     border-color: #32383e
- }
-
- .list-group-item:hover {
-     background-color: #222
- }
+.list-group-item:hover {
+    background-color: #222
+}

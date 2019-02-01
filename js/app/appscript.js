@@ -1,13 +1,5 @@
 var nightMode = localStorage['nightToggle'] == 'true';
-
-var sheetIndex;
-for (var i = 0; i < document.styleSheets.length; i++) {
-    if (document.styleSheets[i] != null && document.styleSheets[i].href.includes("styles_night.css")) {
-        sheetIndex = i;
-        break;
-    }
-}
-document.styleSheets[sheetIndex].disabled = !nightMode;
+setNightMode(nightMode);
 
 function toggleNightMode(){
     this.nightMode = !nightMode;
@@ -15,21 +7,18 @@ function toggleNightMode(){
 }
 
 function setNightMode(state) {
-    var index;
     for (var i = 0; i < document.styleSheets.length; i++) {
-        if (document.styleSheets[i] != null && document.styleSheets[i].href.includes("styles_night.css")) {
-            index = i;
-            break;
+        if (document.styleSheets[i].href != null && document.styleSheets[i].href.includes("night")) {
+            console.log(document.styleSheets[i].id);
+            document.styleSheets[i].disabled = !state;
+            localStorage['nightToggle'] = JSON.stringify(state);
+            return state;
         }
     }
-    this.nightMode = state;
-    document.styleSheets[index].disabled = !this.nightMode;
-    localStorage['nightToggle'] = JSON.stringify(this.nightMode);
-    return this.nightMode;
 }
 
 function toggleLiteMode(){
-    var batterySaver = localStorage['liteMode'] == 'true';
+    var batterySaver = localStorage['batterySaverToggle'] == 'true';
     setBatterySaver(!batterySaver);
 }
 function setLiteMode(state){
