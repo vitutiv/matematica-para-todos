@@ -2,111 +2,88 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/styles_night.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles_night.css">
     <script defer src="../../js/jquery.min.js"></script>
     <script defer src="../../js/bootstrap.min.js"></script>
-    <script defer src="../js/geometry.js"></script>
-    <!--<script defer src="js/semirreta.js"></script>-->
-    <script defer src="js/animRetas.js"></script>
-    <script defer src="../../js/app/appscript.js"></script>
-    <script>
-        var estadoEscaleno = false;
-        var estadoIsosceles = false;
-        var estadoEquilatero = false;
-        var estadoRetangulo = false;
-        function changeState(nomeForma) {
-            var estadoAtual;
-            if (nomeForma === 'escaleno') {
-                estadoAtual = estadoEscaleno;
-                estadoEscaleno = !estadoEscaleno;
-            } else if (nomeForma === 'isosceles') {
-                estadoAtual = estadoIsosceles;
-                estadoIsosceles = !estadoIsosceles;
-            } else if (nomeForma === 'equilatero') {
-                estadoAtual = estadoEquilatero;
-                estadoEquilatero = !estadoEquilatero;
-            } else if (nomeForma === 'retangulo') {
-                estadoAtual = estadoRetangulo;
-                estadoRetangulo = !estadoRetangulo;
-            }
-
-
-            if (estadoAtual) {
-                event.target.src = 'img/triangulo/' + nomeForma + '.svg';
-            } else {
-                event.target.src = 'img/triangulo/' + nomeForma + '1.svg';
-            }
-        }
-    </script>
+    <script defer src="../../js/app/script.js"></script>
     <title>Triângulos</title>
 </head>
 
-<body class="geometry">
+<body class="geometry content-page">
     <header>
-        <div class="wrapper">
-            <canvas id="geometric"></canvas>
-            <div class="accent green-sea"></div>
-        </div>
-        <nav>
-            <button onclick="location.href='../../index.html'">Início</button>
-            <button onclick="location.href='../index.html'">Espaço e Forma</button>
-            <button onclick="location.href='poligono.html'">Polígonos</button>
-            <button disabled>Triângulos</button>
-        </nav>
+        <!--Animation goes here-->
     </header>
-    <main>
-        <p>Um triângulo é um polígono formado por três segmentos de reta que se encontram nas extremidades.
-            Todos os triângulos são polígonos convexos.
-        </p>
-        <p>
-            <b>Número de lados:</b> 3       <br/>
-            <b>Número de ângulos:</b> 3     <br/>
-            <b>Número de vértices:</b> 3
-        </p>
-        <p>Pode ser classificado pelos seus lados e ângulos.</p>
-        <h2>Pelos lados</h2>
-        <h6>Escaleno</h6>
-        <p>Os triângulos escalenos são os que todos os seus lados têm medidas diferentes.</p>
-        <figure>
-            <img src="img/triangulo/escaleno.svg" onclick="changeState('escaleno')"/>
-            <figcaption>Triângulo Escaleno.</figcaption>
-        </figure>
-        <h6>Isóceles</h6>
-        <p>São triângulos que tem pelo menos dois lados iguais.</p>
-        <figure>
-            <img src="img/triangulo/isosceles.svg"  onclick="changeState('isosceles')"/>
-            <figcaption>Triângulo Isósceles.</figcaption>
-        </figure>
-        <h6>Equilátero</h6>
-        <p>Todos os seus lados são iguais, o que os fazem também ser isósceles.</p>
-        <figure>
-            <img src="img/triangulo/equilatero.svg"  onclick="changeState('equilatero')"/>
-            <figcaption>Triângulo Equilátero.</figcaption>
-        </figure>
+    <main class="container">
+        <div class="heading">
+            <div class="row">
+                <div class="col float-left">
+                    <h1 class="title" id="page-title"></h1>
+                    <h2 class="subtitle text-muted" id="page-subtitle">Geometria</h2>
+                </div>
+                <div class="float-right">
+                    <!--Set on javascript-->
+                    <a id="fav-action" href="#" class="text-muted"><i id="fav-icon" class="far fa-heart fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-2" />
+        <div class="content">
+            <p>Um triângulo é um polígono formado por três segmentos de reta que se encontram nas extremidades.
+                Todos os triângulos são polígonos convexos.
+            </p>
+            <p>
+                <b>Número de lados:</b> 3 <br />
+                <b>Número de ângulos:</b> 3 <br />
+                <b>Número de vértices:</b> 3
+            </p>
+            <p>Pode ser classificado pelos seus lados e ângulos.</p>
+            <h2>Pelos lados</h2>
+            <h6>Escaleno</h6>
+            <p>Os triângulos escalenos são os que todos os seus lados têm medidas diferentes.</p>
+            <figure>
+                <img id="triangulo-escaleno" class="interactive" src="img/triangulo/escaleno.svg" data-toggle="img/triangulo/escaleno1.svg" onclick="togglePicture()" />
+                <figcaption>Triângulo Escaleno.</figcaption>
+            </figure>
+            <h6>Isósceles</h6>
+            <p>São triângulos que tem pelo menos dois lados iguais.</p>
+            <figure>
+                <img id="triangulo-isosceles" class="interactive" src="img/triangulo/isosceles.svg" data-toggle="img/triangulo/isosceles1.svg" onclick="togglePicture()" />
+                <figcaption>Triângulo isósceles.</figcaption>
+            </figure>
+            <h6>Equilátero</h6>
+            <p>Todos os seus lados são iguais, o que os fazem também ser isósceles.</p>
+            <figure>
+                <img id="triangulo-equilatero" class="interactive" src="img/triangulo/equilatero.svg" data-toggle="img/triangulo/equilatero1.svg" onclick="togglePicture()" />
+                <figcaption>Triângulo Equilátero.</figcaption>
+            </figure>
 
-        <h2>Pelos Ângulos</h2>
-        <h6>Acutângulo</h6>
-        <p>Todos os ângulos internos possuem menos de 90 graus.</p>
-        <h6>Retângulo</h6>
-        <p>Possui um ângulo interno reto.</p>
-        <figure>
-            <img src="img/triangulo/retangulo.svg" onclick="changeState('retangulo')" />
-            <figcaption>Triângulo Equilátero.</figcaption>
-        </figure>
+            <h2>Pelos Ângulos</h2>
+            <h6>Acutângulo</h6>
+            <p>Todos os ângulos internos possuem menos de 90 graus.</p>
+            <h6>Retângulo</h6>
+            <p>Possui um ângulo interno reto.</p>
+            <figure>
+                <img src="img/triangulo/retangulo.svg" onclick="changeState('retangulo')" />
+                <figcaption>Triângulo Equilátero.</figcaption>
+            </figure>
 
-        <h6>Obtusângulo</h6>
-        <p>Possui um ângulo interno com mais de 90 graus.</p>
-        <h2>Referências</h2>
-        <div class="list-group">
-            <a class="list-group-item list-group-item-action" href="https://mundoeducacao.bol.uol.com.br/matematica/triangulos.htm">
-                Triângulos; Mundo Educação. 
-                <span class="text-muted">Acesso em: 20 de dezembro de 2018.</span>
-            </a>
+            <h6>Obtusângulo</h6>
+            <p>Possui um ângulo interno com mais de 90 graus.</p>
+            <h2>Referências</h2>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action" href="https://mundoeducacao.bol.uol.com.br/matematica/triangulos.htm">
+                    Triângulos; Mundo Educação.
+                    <span class="text-muted">Acesso em: 20 de dezembro de 2018.</span>
+                </a>
+            </div>
         </div>
     </main>
 </body>
+
 </html>

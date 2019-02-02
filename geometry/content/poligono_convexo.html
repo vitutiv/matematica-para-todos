@@ -2,66 +2,52 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/styles_night.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles_night.css">
     <script defer src="../../js/jquery.min.js"></script>
     <script defer src="../../js/bootstrap.min.js"></script>
-    <script defer src="../js/geometry.js"></script>
-    <script defer src="../../js/app/appscript.js"></script>
-    <script>
-        var estadoConvexo = false;
-        var estadoConcavo = false;
-
-        function changeState(nomeForma) {
-            var estadoAtual;
-            if (nomeForma === 'convexo') {
-                estadoAtual = estadoConvexo;
-                estadoConvexo = !estadoConvexo;
-            } else if (nomeForma === 'concavo') {
-                estadoAtual = estadoConcavo;
-                estadoConcavo = !estadoConcavo;
-            }
-
-            if (estadoAtual) {
-                event.target.src = 'img/' + nomeForma + '/' + nomeForma + '.svg';
-            } else {
-                event.target.src = 'img/' + nomeForma + '/' + nomeForma + '1.svg';
-            }
-        }
-    </script>
+    <script defer src="../../js/app/script.js"></script>
     <title>Polígonos Convexos</title>
 </head>
 
-<body class="geometry">
+<body class="geometry content-page">
     <header>
-        <div class="wrapper">
-            <canvas id="geometric"></canvas>
-            <div class="accent green-sea"></div>
-        </div>
-        <nav>
-            <button onclick="location.href='../../index.html'">Início</button>
-            <button onclick="location.href='../index.html'">Espaço e Forma</button>
-            <button onclick="location.href='poligono.html'">Polígonos</button>
-            <button disable>Polígonos Convexos</button>
-        </nav>
+        <!--Animation goes here-->
     </header>
-    <main>
-        <p>
-            Um polígono é convexo quando sempre que desenharmos dois pontos em qualquer lugar deste polígono, a linha traçada
-            entre
-            eles está totalmente dentro do polígono, independentemente da posição dos pontos.
-        </p>
-        <figure class="col-12 col-md-8 col-lg-4 col-xg-4">
-            <img src="img/convexo/convexo.svg" onclick="changeState('convexo')" />
-            <figcaption>Imagem: Exemplo de Polígono Convexo</figcaption>
-        </figure>
-        <figure class="col-12 col-md-8 col-lg-4 col-xg-4">
-            <img src="img/concavo/concavo.svg" onclick="changeState('concavo')" />
-            <figcaption>Imagem: Exemplo de Polígono Não Convexo (ou côncavo)</figcaption>
-        </figure>
+    <main class="container">
+        <div class="heading">
+            <div class="row">
+                <div class="col float-left">
+                    <h1 class="title" id="page-title"></h1>
+                    <h2 class="subtitle text-muted" id="page-subtitle">Geometria</h2>
+                </div>
+                <div class="float-right">
+                    <!--Set on javascript-->
+                    <a id="fav-action" href="#" class="text-muted"><i id="fav-icon" class="far fa-heart fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-2" />
+        <div class="content">
+            <p>
+                Um polígono é convexo quando sempre que desenharmos dois pontos em qualquer lugar deste polígono, a linha traçada
+                entre
+                eles está totalmente dentro do polígono, independentemente da posição dos pontos.
+            </p>
+            <figure class="col-12 col-md-8 col-lg-4 col-xg-4">
+                <img id="convexo" class="interactive" src="img/convexo/convexo.svg" data-toggle="img/convexo/convexo1.svg" onclick="togglePicture()" />
+                <figcaption>Imagem: Exemplo de Polígono Convexo</figcaption>
+            </figure>
+            <figure class="col-12 col-md-8 col-lg-4 col-xg-4">
+                <img id="concavo" class="interactive" src="img/concavo/concavo.svg" data-toggle="img/concavo/concavo1.svg" onclick="togglePicture()" />
+                <figcaption>Imagem: Exemplo de Polígono Não Convexo (ou côncavo)</figcaption>
+            </figure>
     </main>
 </body>
+
 </html>

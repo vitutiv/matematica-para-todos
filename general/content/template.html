@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
@@ -10,13 +11,11 @@
     <link rel="stylesheet" href="../../css/styles_night.css">
     <script defer src="../../js/jquery.min.js"></script>
     <script defer src="../../js/bootstrap.min.js"></script>
-    <script defer src="../../js/app/appscript.js"></script>
-    <script defer src="../../js/app/homepage.js" type="text/javascript"></script>
-    <script defer src="../../anim1.js"></script>
-    <title>Matemática para Todos</title>
+    <script defer src="../../js/app/script.js"></script>
+    <title>TITULO AQ CARAI</title>
 </head>
-
-<body id="content-page">
+<!--Change body class according to theme-->
+<body class="geometry content-page">
     <header>
         <!--Animation goes here-->
     </header>
@@ -24,20 +23,70 @@
         <div class="heading">
             <div class="row">
                 <div class="col float-left">
-                    <h1 class="title" id="page-title">Lorem</h1>
-                    <h2 class="subtitle text-muted" id="page-subtitle">Ipsum</h2>
+                    <!--LEAVE IT EMPTY. The script sets it automatically as the page title. You can thank me later.-->
+                    <h1 class="title" id="page-title"></h1>
+                    <!--Still, this one needs to be set manually.-->
+                    <h2 class="subtitle text-muted" id="page-subtitle">Tema (ex: Geometria)</h2>
                 </div>
                 <div class="float-right">
-                    <a id="fav-action" href="#" onclick="favorite()" class="text-muted"><i class="far fa-heart fa-2x"></i></a>
+                    <!--Click event is set on javascript for comfort purposes, dont worry-->
+                    <a id="fav-action" href="#" class="text-muted"><i id="fav-icon" class="far fa-heart fa-2x"></i></a>
                 </div>
             </div>
         </div>
-        <hr class="mx-2"/>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat nihil blanditiis nobis similique alias. Repellat harum laboriosam corporis quod modi id odit velit totam explicabo necessitatibus impedit, repellendus facilis cupiditate!</p>
-        <figure class="image-container">
-            <img src="../../img/logo_ifet.svg"/>
-            <figcaption>A single image example</figcaption>
-        </figure>
+        <hr class="mx-2" />
+        <div class="content">
+            <p>
+                PARÁGRAFO Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur similique recusandae reprehenderit ab mollitia sit aliquid nisi maxime dignissimos, modi et officiis inventore temporibus facilis consequatur at cumque ut ad.
+            </p>
+            <h3>Título de Seção</h3>
+            <!--imagem normal-->
+            <figure>
+                <img src="url-da-imagem"/>
+                <figcaption>Legenda</figcaption>
+            </figure>
+            <!--imagem interativa-->
+            <figure>
+                <img id="id-obrigatorio" src="url-da-imagem-inicial.svg" class="interactive" data-toggle="url-da-outra-imagem.svg" onclick="togglePicture()"/>
+                <figcaption>Legenda</figcaption>
+            </figure>
+
+            <!--Use como e quano quiser, so um exemplo-->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Titulo card</h2>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Pergunta?</p>
+                    <figure>
+                        <img src="../../img/logo_ifet.svg" />
+                        <figcaption>Legenda</figcaption>
+                    </figure>
+                </div>
+                <div class="card-footer">
+                    <button id="show-1" class="btn btn-block" data-toggle="collapse" data-target="#resposta" onclick="toggleText()">Mostrar Resposta</button>
+                    <div id="resposta" class="collapse" style="padding: 10px;">
+                        <h2>Resposta</h2>
+                        <p><b>Resposta?</b> Seria isso mesmo?</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Referências</h3>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action" href="link-aqui.html">
+                    Título; Página.
+                    <span class="text-muted">Acesso: DIA de MÊS de ANO.</span>
+                </a>
+                <a class="list-group-item list-group-item-action" href="link-aqui.html">
+                    Título; Página.
+                    <span class="text-muted">Acesso: DIA de MÊS de ANO.</span>
+                </a>
+                <p class="list-group-item">
+                    SOBRENOME1, AUTOR1; SOBRENOME2, AUTOR2. TÍTUO. Geometria Plana. Vol. X. LOCAL:EDITORA, ANO.
+                </p>
+            </div>
+        </div>
     </main>
 </body>
 
