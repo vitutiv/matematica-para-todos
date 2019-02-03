@@ -15,8 +15,8 @@ canvas {
 }
 
 body,
-h1 {
-    color: #f9f9f9;
+h1,h2,p,a, .text-dark {
+    color: #f9f9f9 !important;
 }
 
 .nightshift {

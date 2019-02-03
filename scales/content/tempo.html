@@ -2,145 +2,170 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/styles_night.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles_night.css">
     <script defer src="../../js/jquery.min.js"></script>
     <script defer src="../../js/bootstrap.min.js"></script>
-    <script defer src="../js/geometry.js"></script>
-    <script defer src="../../js/app/questioncards.js"></script>
-    <script defer src="../../js/app/appscript.js"></script>
+    <script defer src="../../js/app/script.js"></script>
     <title>Tempo</title>
 </head>
 
-<body class="scales">
-    <header class="nephritis">
-        <nav>
-            <button onclick="location.href='../../index.html'">Início</button>
-            <button onclick="location.href='../index.html'">Grandezas e Medidas</button>
-            <button disabled>Tempo</button>
-        </nav>
+<body class="content-page scales">
+    <header>
+        <!--Animation goes here-->
     </header>
-    <main>
-        <p>
-            Antes de surgir as unidades de medição do tempo, o ser humano precisava se orientar e usava o sol e as estrelas como forma de orientação. Atualmente, existem vários aparelhos com essa finalidade, mas aquele que mais usamos é o relógio.
-        </p>
+    <main class="container">
+        <div class="heading">
+            <div class="row">
+                <div class="col float-left">
+                    <h1 class="title" id="page-title"></h1>
+                    <h2 class="subtitle text-muted" id="page-subtitle">Grandezas e Medidas</h2>
+                </div>
+                <div class="float-right">
+                    <!--Set on javascript-->
+                    <a id="fav-action" href="#" class="text-muted"><i id="fav-icon" class="far fa-heart fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-2" />
+        <div class="content">
+            <p>
+                Antes de surgir as unidades de medição do tempo, o ser humano precisava se orientar e usava o sol e as
+                estrelas
+                como forma de orientação. Atualmente, existem vários aparelhos com essa finalidade, mas aquele que mais
+                usamos é o
+                relógio.
+            </p>
 
-        <figure class="col-12 col-lg-10">
-            <img class="img-fluid" src="img/relogiodigital.svg" />
-            <figcaption>
-                Relógio Analógico. O ponteiro pequeno marca as horas, o ponteiro médio marca os minutos e o ponteiro vermelho
-                marca os segundos
-            </figcaption>
-        </figure>
+            <figure class="col-12 col-lg-10">
+                <img class="img-fluid" src="img/relogiodigital.svg" />
+                <figcaption>
+                    Relógio Analógico. O ponteiro pequeno marca as horas, o ponteiro médio marca os minutos e o
+                    ponteiro vermelho
+                    marca os segundos
+                </figcaption>
+            </figure>
 
-        <p>
-            Por muito tempo, houve diversos sistemas de medidas, criando problemas para o comércio. E por isso foi
-            desenvolvido
-            o Sistema Internacional de Unidades (SI). As principais unidades de medida são: o tempo, o comprimento, o
-            volume, a
-            massa e a temperatura.
+            <p>
+                Por muito tempo, houve diversos sistemas de medidas, criando problemas para o comércio. E por isso foi
+                desenvolvido
+                o Sistema Internacional de Unidades (SI). As principais unidades de medida são: o tempo, o comprimento,
+                o
+                volume, a
+                massa e a temperatura.
+
+            </p>
             <figure class="col-12 col-md-10 col-lg-4">
                 <img src="img/relogio.svg" />
                 <figcaption>
-                    Relógio Analógico. O ponteiro pequeno marca as horas, o ponteiro médio marca os minutos e o ponteiro vermelho marca os segundos
+                    Relógio Analógico. O ponteiro pequeno marca as horas, o ponteiro médio marca os minutos e o
+                    ponteiro
+                    vermelho marca os segundos
                 </figcaption>
             </figure>
-        </p>
-        <div class="d-flex justify-content-center">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Duração</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr id="decade">
-                        <td>1 década</td>
-                        <td>10 anos</td>
-                    </tr>
-                    <tr id="year">
-                        <td>1 ano</td>
-                        <td>12 meses</td>
-                    </tr>
-                    <tr id="semester">
-                        <td>1 semestre</td>
-                        <td>6 meses</td>
-                    </tr>
-                    <tr id="trimester">
-                        <td>1 trimestre</td>
-                        <td>3 meses</td>
-                    </tr>
-                    <tr id="month">
-                        <td>1 mês</td>
-                        <td class="text-lowercase">28, 29* 30 ou 31 dias</td>
-                    </tr>
-                    <tr id="fortnight">
-                        <td>1 quinzena</td>
-                        <td>15 dias</td>
-                    </tr>
-                    <tr id="week">
-                        <td>1 semana</td>
-                        <td>7 dias</td>
-                    </tr>
-                    <tr id="day">
-                        <td>1 dia</td>
-                        <td>24 horas</td>
-                    </tr>
-                    <tr id="hour">
-                        <td>1 hora</td>
-                        <td>60 minutos</td>
-                    </tr>
-                    <tr id="minute">
-                        <td>1 minuto</td>
-                        <td>60 segundos</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <h2>Conversão</h2>
-        <p>
-            É preciso entender que 1 minuto é igual a 60 segundos, que geralmente é o tempo que demora para um
-            semáforo mudar de cor e 60 minutos é igual a 1 hora, que é o tempo para atividades extras como a prática de esportes.
-            Para converter de unidades maiores para unidades menores utilizamos a multiplicação e para converter de unidades menores para unidades maiores utilizamos a divisão.
-        </p>
-        <div class="d-flex flex-column">
-            <table class="table table-bordered">
-                <thead>
-                    
-                </thead>
-            </table>
-        </div>
-        <h2>Exemplos</h2>
-        <h3>Horas → minutos</h3>
-        <p>
-            1 hora = 1 * 60 minutos<br/>
-            8 horas = 8 horas x 60 minutos = 480 minutos
-        </p>
-        <h3>Horas → segundos</h3>
-        <p>
-            1 hora = 3600 segundos<br/>
-            3 horas = 3600 x 3 = 10.800 segundos
-        </p>
-        <h3>Segundos → minutos</h3>
-        <p>
-            1 segundo = 1 ÷ 60 minutos<br/>
-            15 segundos = 15 ÷ 60 minutos = 0.25 minutos
-        </p>
-        <h2>Referências</h2>
-        <div class="list-group">
-            <a class="list-group-item list-group-item-action" href="https://matematicabasica.net/unidades-de-medida">
-                NOVAES, Jean Carlos. Unidades de medida.
-                <span class="text-muted"> Acesso em 09 de outubro de 2018.</span>
-            </a>
-            <a class="list-group-item list-group-item-action" href="https://www.estudopratico.com.br/unidades-de-medida">
-                RICARDO, Paulo. Unidades de medida.
-                <span class="text-muted"> Acesso em 09 de outubro de 2018.</span>
-            </a>
+            <div class="d-flex justify-content-center">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Duração</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="decade">
+                            <td>1 década</td>
+                            <td>10 anos</td>
+                        </tr>
+                        <tr id="year">
+                            <td>1 ano</td>
+                            <td>12 meses</td>
+                        </tr>
+                        <tr id="semester">
+                            <td>1 semestre</td>
+                            <td>6 meses</td>
+                        </tr>
+                        <tr id="trimester">
+                            <td>1 trimestre</td>
+                            <td>3 meses</td>
+                        </tr>
+                        <tr id="month">
+                            <td>1 mês</td>
+                            <td class="text-lowercase">28, 29* 30 ou 31 dias</td>
+                        </tr>
+                        <tr id="fortnight">
+                            <td>1 quinzena</td>
+                            <td>15 dias</td>
+                        </tr>
+                        <tr id="week">
+                            <td>1 semana</td>
+                            <td>7 dias</td>
+                        </tr>
+                        <tr id="day">
+                            <td>1 dia</td>
+                            <td>24 horas</td>
+                        </tr>
+                        <tr id="hour">
+                            <td>1 hora</td>
+                            <td>60 minutos</td>
+                        </tr>
+                        <tr id="minute">
+                            <td>1 minuto</td>
+                            <td>60 segundos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2>Conversão</h2>
+            <p>
+                É preciso entender que 1 minuto é igual a 60 segundos, que geralmente é o tempo que demora para um
+                semáforo mudar de cor e 60 minutos é igual a 1 hora, que é o tempo para atividades extras como a
+                prática de
+                esportes.
+                Para converter de unidades maiores para unidades menores utilizamos a multiplicação e para converter de
+                unidades
+                menores para unidades maiores utilizamos a divisão.
+            </p>
+            <div class="d-flex flex-column">
+                <table class="table table-bordered">
+                    <thead>
+
+                    </thead>
+                </table>
+            </div>
+            <h2>Exemplos</h2>
+            <h3>Horas → minutos</h3>
+            <p>
+                1 hora = 1 * 60 minutos<br />
+                8 horas = 8 horas x 60 minutos = 480 minutos
+            </p>
+            <h3>Horas → segundos</h3>
+            <p>
+                1 hora = 3600 segundos<br />
+                3 horas = 3600 x 3 = 10.800 segundos
+            </p>
+            <h3>Segundos → minutos</h3>
+            <p>
+                1 segundo = 1 ÷ 60 minutos<br />
+                15 segundos = 15 ÷ 60 minutos = 0.25 minutos
+            </p>
+            <h2>Referências</h2>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action" href="https://matematicabasica.net/unidades-de-medida">
+                    NOVAES, Jean Carlos. Unidades de medida.
+                    <span class="text-muted"> Acesso em 09 de outubro de 2018.</span>
+                </a>
+                <a class="list-group-item list-group-item-action" href="https://www.estudopratico.com.br/unidades-de-medida">
+                    RICARDO, Paulo. Unidades de medida.
+                    <span class="text-muted"> Acesso em 09 de outubro de 2018.</span>
+                </a>
+            </div>
         </div>
     </main>
-</body> 
+</body>
+
 </html>
