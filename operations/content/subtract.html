@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles_night.css">
+    <script defer src="../../js/jquery.min.js"></script>
+    <script defer src="../../js/bootstrap.min.js"></script>
+    <script defer src="../../js/app/script.js"></script>
+    <title>Subtração</title>
+</head>
+<!--Change body class according to theme-->
+
+<body class="operations content-page">
+    <header>
+        <!--Animation goes here-->
+    </header>
+    <main class="container">
+        <div class="heading">
+            <div class="row">
+                <div class="col float-left">
+                    <!--LEAVE IT EMPTY. The script sets it automatically as the page title. You can thank me later.-->
+                    <h1 class="title" id="page-title"></h1>
+                    <!--Still, this one needs to be set manually.-->
+                    <h2 class="subtitle text-muted" id="page-subtitle">Operações Numéricas</h2>
+                </div>
+                <div class="float-right">
+                    <!--Click event is set on javascript for comfort purposes, dont worry-->
+                    <a id="fav-action" href="#" class="text-muted"><i id="fav-icon" class="far fa-heart fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-2" />
+        <div class="content">
+            <div class="card">
+                <div class="card-body">
+                    Carlinhos tem uma coleção de 8 carrinhos.
+
+                    Ele deu 3 carrinhos para o seu primo Henrique. Com quantos carrinhos ele ficou?
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-block" data-toggle="collapse" data-target="#resposta">Mostrar resposta</button>
+                    <div id="resposta" class="collapse">
+                        <p>
+                            A operação a ser realizada é a da subtração. <br/>
+                            8 – 3 = 5 → 8 menos 3 é igual a 5. <br/>
+                            Portanto, Carlinhos ficou com 5 carrinhos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p>
+                Subtrair é o mesmo que retirar. Na subtração utilizamos o sinal –, que pode ser lido como menos.
+            </p>
+            <p>
+                Os números antes do sinal de igual são chamados de minuendo e subtraendo. 
+                O valor após o sinal de igual é chamado de diferença ou resto.
+                <br/>
+                <b>Exemplos:</b> 4 – 1 = 3
+            </p>
+            <h3>Propriedades da subtração</h3>
+            <div class="card bg-warning">
+                <div class="card-header">
+                    <h4 class="card-title">Cuidado!</h4>
+                </div>
+                <div class="card-body">
+                    A subtração não satisfaz a propriedade comutativa, ou seja, ao trocar a ordem em que os valores são subtraídos
+                    o resultado é alterado. Que nesse caso será um valor com sinal trocado. <br/>
+                    <b>Exemplos:</b> 4 – 1 = 3 e 1 – 4 = -3
+                </div>
+            </div>
+            <h4>Fechamento</h4>
+            <p>
+                A diferença de dois ou mais números naturais tem como resultado um número natural.
+            </p>
+            <h4>Elemento neutro</h4>
+            <p>Diferente da adição, <b>não existe elemento neutro na subtração</b>.</p>
+            
+            <h4>Anulação</h4>
+            <p>
+                Quando o minuendo for igual ao subtraendo, tem como resultado dessa diferença o 0 (zero).
+                <br/>
+                <b>Exemplo: </b> 4 - 4 = 0
+            </p>
+            <h3>Referências</h3>
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action" href="https://escolakids.uol.com.br/operacao-da-subtracao.htm">
+                    NOÉ, Marcos. “Operação da subtração”; Escola Kids.
+                    <span class="text-muted">Acesso: 01 de outubro de 2018.</span>
+                </a>
+                <a class="list-group-item list-group-item-action" href="https://matematicabasica.net/subtracao">
+                    NOVAES, Jean Carlos. “Subtração “; Matemática Básica.
+                    <span class="text-muted">Acesso: DIA de MÊS de ANO.</span>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
