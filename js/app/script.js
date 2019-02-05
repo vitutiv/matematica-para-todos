@@ -1,6 +1,4 @@
 var nightMode = localStorage['nightToggle'] == 'true';
-nightMode = false;
-
 findFavorite();
 setNightMode(nightMode);
 var buttonText = "Ocultar Resposta";
