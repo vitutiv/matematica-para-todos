@@ -49,12 +49,21 @@
                 <img id="id-obrigatorio" src="url-imagem-original" class="interactive" data-toggle="url-imagem-secundaria" onclick="togglePicture()" />
             -->
             <figure class="interactive">
-                <img id="id-obrigatorio" src="../../img/logo_ifet.svg" data-toggle="../../img/logo_ifet_black.svg" onclick="togglePicture()" />
+                <img id="id-obrigatorio" src="../../img/logo_ifet.svg" data-toggle="../../img/logo_ifet_white.svg" onclick="togglePicture()" />
                 <figcaption>Imagem interativa - Legenda</figcaption>
             </figure>
             <!--Imagem que tem algum elemento preto ou muito escuro (as cores serão invertidas caso o modo noturno esteja ativado)-->
             <figure>
-                <img src="../../img/logo_ifet_black.svg" class="nightshift" alt="">
+                <img src="../../img/logo_ifet.svg" class="nightshift" alt="">
+                <figcaption>Imagem invertida - Legenda</figcaption>
+            </figure>
+
+            <!--Outra alternativa para o modo noturno-->
+            <figure>
+                <!--d-light só exibe a imagem se o tema for claro-->
+                <!--d-dark só exibe a imagem quando o tema for escuro-->
+                <img src="../../img/logo_ifet.svg" class="d-light" alt="">
+                <img src="../../img/logo_ifet_white.svg" class="d-dark" alt="">
                 <figcaption>Imagem invertida - Legenda</figcaption>
             </figure>
             <!--Use como e quano quiser, so um exemplo-->

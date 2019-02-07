@@ -16,19 +16,28 @@ function getTitle(){
 }
 
 function toggleNightMode(){
-    this.nightMode = !nightMode;
+    this.nightMode = !this.nightMode;
     setNightMode(this.nightMode);
 }
 
 function setNightMode(state) {
+    var icon = $("<i/>").addClass("fa fa-moon mr-3");
+    var text = 'Ativar modo noturno';
     for (var i = 0; i < document.styleSheets.length; i++) {
         if (document.styleSheets[i].href != null && document.styleSheets[i].href.includes('night')) {
-            //console.log(document.styleSheets[i].id);
+            //console.log(document.styleS1heets[i].id);
+            if (state){
+                icon = $("<i/>").addClass("fa fa-sun mr-3");
+                text = "Desativar modo noturno";
+            }
             document.styleSheets[i].disabled = !state;
             localStorage['nightToggle'] = JSON.stringify(state);
-            return state;
+            break;
         }
     }
+    $("#toggleNightMode").html("");
+    $("#toggleNightMode").append(icon).append(text);
+    return state;
 }
 function toggleLiteMode(){
     var batterySaver = localStorage['batterySaverToggle'] == 'true';
