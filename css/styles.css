@@ -53,7 +53,7 @@ button:focus {
   outline: 0 !important;
 }
 
-.content button{
+.content-page button {
   padding: 1rem 0 !important;
   color: white !important
 }
@@ -78,24 +78,20 @@ img {
   width: 100%;
 }
 
-.d-light{
+.d-light {
   display: initial;
 }
-.d-dark{
+
+.d-dark {
   display: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding: 1rem 0;
 }
 
-header {
+.content-page header {
   height: 10rem !important;
   background: #263238;
   position: relative;
@@ -103,7 +99,6 @@ header {
   left: 0;
   margin: 0 !important
 }
-
 
 input {
   background: transparent;
@@ -149,35 +144,30 @@ input:focus {
 
 OBS: O LOGO DO IF NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.*/
 
-.numbers .content-background,
-.numbers header, .numbers button {
-  background-color: var(--main-red)
+.numbers .content-background, .numbers header, .numbers button, .numbers .bg-theme {
+  color: white;
+  background-color: var(--main-red) !important
 }
 
-.numbers .content-color,
-.content-page.numbers a {
+.numbers .content-color, .content-page.numbers a, .numbers .color-theme {
   color: var(--main-red) !important
 }
 
-.operations .content-background,
-.operations header,
-.operations button {
+.operations .content-background, .operations header, .operations button, .operations .bg-theme {
+  color: white;
   background-color: var(--main-pink) !important
 }
 
-.operations .content-color,
-.content-page.operations a {
+.operations .content-color, .content-page.operations a, .operations .color-theme {
   color: var(--main-pink) !important
 }
 
-.geometry .content-background,
-.geometry header,
-.geometry button {
+.geometry .content-background, .geometry header, .geometry button, .geometry .bg-theme {
+  color: white;
   background-color: var(--main-deep-purple) !important
 }
 
-.geometry .content-color,
-.content-page.geometry a {
+.geometry .content-color, .content-page.geometry a {
   color: var(--main-deep-purple) !important
 }
 
@@ -212,7 +202,6 @@ OBS: O LOGO DO IF NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.*/
 .about .content-color, .about a {
   color: var(--main-amber) !important
 }
-
 
 .header {
   font-family: 'Lato', sans-serif, bold;
@@ -283,7 +272,6 @@ OBS: O LOGO DO IF NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.*/
   background-color: red
 }
 
-
 .clear-input {
   opacity: 0;
   transition: 0.1s ease
@@ -326,7 +314,7 @@ a.trigger {
   width: 100%
 }
 
-.content-background{
+.content-background {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -386,14 +374,16 @@ a.trigger {
 .content-page .card button {
   margin: .5rem 0;
 }
-.card{
+
+.card {
   margin: 1rem 0;
 }
 
-.card-header, .card-bod{
+.card-header, .card-bod {
   padding: 0;
   margin: 0;
 }
+
 .picture {
   display: block;
   margin: .3rem auto
@@ -423,15 +413,21 @@ a.trigger {
 }
 
 /*Content*/
+
 .content-page {
   padding: 0;
   line-height: 2rem
 }
 
 .content-page h1.title, h2.subtitle {
-  padding: 0;
+  padding: 0 !important;
   text-align: left;
   word-wrap: break-word
+}
+
+h5.title {
+  padding: 0 !important;
+  margin: 0 !important
 }
 
 .content-page .heading {
@@ -451,7 +447,6 @@ a.trigger {
   font-size: 1.5rem
 }
 
-
 .content-page h4 {
   font-size: 1.25rem
 }
@@ -468,7 +463,8 @@ a.trigger {
   margin: 0;
   padding: 0
 }
-.content-page .float-right{
+
+.content-page .float-right {
   position: relative
 }
 
@@ -477,15 +473,18 @@ a.trigger {
   top: 35%;
 }
 
-
-p{
+p {
   text-indent: 1rem;
 }
 
-.list-group-item{
+.list-group-item {
   text-indent: 0;
 }
 
-ul.styled-list li{
+ul.styled-list li {
   list-style-type: circle !important;
+}
+
+.bg-warning {
+  color: black !important;
 }
