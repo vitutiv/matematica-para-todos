@@ -14,10 +14,12 @@ function toggleText(){
 function getTitle(){
     return document.title;
 }
+
 function toggleNightMode(){
     this.nightMode = !nightMode;
     setNightMode(this.nightMode);
 }
+
 function setNightMode(state) {
     for (var i = 0; i < document.styleSheets.length; i++) {
         if (document.styleSheets[i].href != null && document.styleSheets[i].href.includes('night')) {

@@ -34,3 +34,10 @@ tr {
 .list-group-item:hover {
     background-color: #222
 }
+
+.d-light{
+  display: none;
+}
+.d-dark{
+  display: initial;
+}

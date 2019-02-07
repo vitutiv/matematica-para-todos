@@ -73,9 +73,16 @@ figure {
 img {
   display: block;
   margin: auto;
-  height: 60vh;
+  max-height: 60vh;
   width: auto;
-  max-width: 100%;
+  width: 100%;
+}
+
+.d-light{
+  display: initial;
+}
+.d-dark{
+  display: none;
 }
 
 h1,
@@ -130,7 +137,7 @@ input:focus {
   transition: 0.2s ease
 }
 
-.watermark {
+/*.watermark {
   left: 50%;
   opacity: .5;
   position: fixed;
@@ -139,6 +146,8 @@ input:focus {
   width: auto;
   z-index: -1
 }
+
+OBS: O LOGO DO IF NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.*/
 
 .numbers .content-background,
 .numbers header, .numbers button {
@@ -325,7 +334,7 @@ a.trigger {
 }
 
 .content-wrapper {
-  padding: 0 1em 0 3em
+  padding: 0 1em 0 3em;
 }
 
 .content-wrapper-header {
@@ -475,4 +484,8 @@ p{
 
 .list-group-item{
   text-indent: 0;
+}
+
+ul.styled-list li{
+  list-style-type: circle !important;
 }
