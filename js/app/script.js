@@ -80,7 +80,11 @@ function favorite(){
     localStorage['favorites'] = JSON.stringify(favorites);
 }
 function findFavorite(){
-    var favorites = JSON.parse(localStorage['favorites']);
+    var favorites = [];
+    var replace = localStorage['favorites'] != undefined;
+    if (replace){
+        favorites = JSON.parse(localStorage['favorites']);
+    }
     var url = location.pathname;
     for (var i = 0; i < favorites.length; i++) {
         if (favorites[i].url == url) {
