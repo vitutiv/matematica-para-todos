@@ -1,9 +1,9 @@
-var nightMode = localStorage['nightToggle'] == 'true';
-findFavorite();
-setNightMode(nightMode);
-var buttonText = "Ocultar Resposta";
-$('#fav-action').click(function(){favorite()});
 $("#page-title").html(getTitle);
+$('#fav-action').click(function(){favorite()});
+var nightMode = localStorage['nightToggle'] == 'true';
+setNightMode(nightMode);
+findFavorite();
+var buttonText = "Ocultar Resposta";
 function toggleText(){
     var id = "#"+event.target.id;
     var $element = $(id);
@@ -39,12 +39,12 @@ function setLiteMode(state){
     return state;
 }
 function favorite(){
-    var favorites = JSON.parse(localStorage['favorites']);
-    //console.log(favorites);
-
-    if (favorites == undefined) {
-        favorites = [];
+    var favorites = [];
+    var replace = JSON.parse(localStorage['favorites']) != undefined;
+    if (replace){
+        favorites = JSON.parse(localStorage['favorites']);
     }
+    //console.log(favorites);
 
     var favorite = {
         title: $('#page-title').html(),
