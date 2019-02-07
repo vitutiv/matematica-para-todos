@@ -2,6 +2,7 @@ $("#page-title").html(getTitle);
 var nightMode = localStorage['nightToggle'] == 'true';
 setNightMode(nightMode);
 $('#fav-action').click(function(){favorite()});
+$('#fav-action').attr('href', 'javascript:void(0)');
 findFavorite();
 var buttonText = "Ocultar Resposta";
 function toggleText(){
@@ -25,13 +26,13 @@ function setNightMode(state) {
     var text = 'Ativar modo noturno';
     for (var i = 0; i < document.styleSheets.length; i++) {
         if (document.styleSheets[i].href != null && document.styleSheets[i].href.includes('night')) {
-            //console.log(document.styleS1heets[i].id);
             if (state){
                 icon = $("<i/>").addClass("fa fa-sun mr-3");
                 text = "Desativar modo noturno";
             }
             document.styleSheets[i].disabled = !state;
             localStorage['nightToggle'] = JSON.stringify(state);
+            console.log("Setting  'Night Mode' applied. Enabled: " + state + ", URL: " + document.styleSheets[i].href);
             break;
         }
     }
