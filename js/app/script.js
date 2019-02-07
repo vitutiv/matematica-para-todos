@@ -1,7 +1,7 @@
 $("#page-title").html(getTitle);
-$('#fav-action').click(function(){favorite()});
 var nightMode = localStorage['nightToggle'] == 'true';
 setNightMode(nightMode);
+$('#fav-action').click(function(){favorite()});
 findFavorite();
 var buttonText = "Ocultar Resposta";
 function toggleText(){
@@ -49,7 +49,7 @@ function setLiteMode(state){
 }
 function favorite(){
     var favorites = [];
-    var replace = JSON.parse(localStorage['favorites']) != undefined;
+    var replace = localStorage['favorites'] != undefined;
     if (replace){
         favorites = JSON.parse(localStorage['favorites']);
     }
