@@ -1,4 +1,4 @@
-var contents = [];
+
 function loadSearchable() {
     $("li a").each(function (index, element) {
         contents.push({
@@ -53,5 +53,8 @@ $(".main-search").focus(function () {
     search();
 });
 
+var contents = [];
 
-loadSearchable();
+$(document).ready(function() {
+  loadSearchable();
+});

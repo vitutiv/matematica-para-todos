@@ -150,7 +150,7 @@ OBS: O LOGO DO IF NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.*/
 }
 
 .numbers .content-color, .content-page.numbers a, .numbers .color-theme {
-  color: var(--main-red) !important
+  color: var(--main-pink) !important
 }
 
 .operations .content-background, .operations header, .operations button, .operations .bg-theme {
@@ -473,12 +473,19 @@ h5.title {
   top: 35%;
 }
 
+.content-page #fav-action:hover {
+  cursor: pointer;
+}
+
 p {
   text-indent: 1rem;
 }
 
 .list-group-item {
   text-indent: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--mainLightGray);
 }
 
 ul.styled-list li {

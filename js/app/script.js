@@ -48,16 +48,10 @@ function setLiteMode(state){
     return state;
 }
 function favorite(){
-    var favorites = [];
-    var replace = localStorage['favorites'] != undefined;
-    if (replace){
-        favorites = JSON.parse(localStorage['favorites']);
-    }
-    //console.log(favorites);
-
+    var favorites = getFavorites();
     var favorite = {
         title: $('#page-title').html(),
-        category: $('#page-subtitle').html,
+        category: $('#page-subtitle').html(),
         url: location.pathname
     }
 
@@ -80,11 +74,8 @@ function favorite(){
     localStorage['favorites'] = JSON.stringify(favorites);
 }
 function findFavorite(){
-    var favorites = [];
-    var replace = localStorage['favorites'] != undefined;
-    if (replace){
-        favorites = JSON.parse(localStorage['favorites']);
-    }
+    var favorites = getFavorites();
+
     var url = location.pathname;
     for (var i = 0; i < favorites.length; i++) {
         if (favorites[i].url == url) {
@@ -96,6 +87,11 @@ function findFavorite(){
     }
     return false;
 }
+
+function getFavorites() {
+  return (localStorage['favorites'] != undefined) ? JSON.parse(localStorage['favorites']) : [];
+}
+
 function togglePicture(){
     var elementID = "#"+(event.target.id);
     var $element = $(elementID);
