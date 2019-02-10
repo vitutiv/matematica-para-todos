@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <title>Jogo da Adição</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Adição_Responsivo.css">
+  </head>
+  <body>
+    <div class="container mx-auto my-3" >
+      <div class="row mx-auto" id="mainBox">
+          <div class="col-12 d-flex justify-content-between">
+            <div class="col-6 p-0">
+              <div id="timeremainingBox">
+                Tempo restante: <span id="timeremainingvalue"></span>Sec
+              </div>
+            </div>
+            <div class="col-6 d-flex mx-auto p-0 justify-content-end">
+              <div id="scoreBox">
+                Pontuação: <span id="scorevalue"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3 justify-content-center">
+            <div class="col-12" id="gameOverBox"></div>
+            <div class="align-top" id="questionBox"></div>
+          </div>
+          <div class="col-12">
+            <div id="instructionBox">Clique na opção correta
+            </div>
+          </div>
+          <div class="col-12 d-block d-flex-row justify-content-center mb-2 " id="choiceBox">
+
+              <div id="box1" class="box col-4" onclick="correction(1)"></div>
+              <div id="box2" class="box col-4" onclick="correction(2)"></div>
+              <div id="box3" class="box col-4" onclick="correction(3)"></div>
+              <div id="box4" class="box col-4" onclick="correction(4)"></div>
+
+
+              <div id="box5" class="box col-4" onclick="correction(5)"></div>
+              <div id="box6" class="box col-4" onclick="correction(6)"></div>
+              <div id="box7" class="box col-4" onclick="correction(7)"></div>
+              <div id="box8" class="box col-4" onclick="correction(8)"></div>
+
+
+            <div id="box9" class="box col-4" onclick="correction(9)"></div>
+            <div id="box0" class="box col-12" onclick="correction(0)"></div>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+
+          </div>
+          <div class="col-12 mx-auto my-2">
+            <div id="startresetBox" onclick="startGame()">Começar Jogo</div>
+          </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Adição.js"></script>
+  </body>
+</html>

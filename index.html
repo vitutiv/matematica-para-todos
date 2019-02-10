@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/styles_night.css">
 	<script defer src="js/jquery.min.js"></script>
 	<script defer src="js/bootstrap.min.js"></script>
 	<script defer src="js/app/script.js"></script>
-	<script defer src="js/app/homepage.js" type="text/javascript"></script>
+	<script defer src="js/app/homepage.js"></script>
 	<title>Matemática para Todos</title>
 </head>
+
 <body class="start-page">
-	<section class="header">Matemática para <br/>Todos</section>
-	<section class="search">
+	<header class="header">Matemática para <br />Todos</header>
+	<div class="search">
 		<div class="search-form">
 			<i class="fas fa-search"></i>
 			<input type="text" oninput="search()" class="main-search" name="searchbox" value="" placeholder="Pesquisar...">
@@ -30,18 +33,19 @@
 		</a>
 		<div class="search-results">
 		</div>
-	</section>
+	</div>
 
 	<main class="contents">
 		<section class="content numbers">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
-				<div class="content-wrapper-header">
+				<header class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-1-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Números</h4>
+						<h5 class="title">Números</h5>
 					</a>
-				</div>
+				</header>
+
 				<div id="content-1-collapse" class="collapse">
 					<ul class="expanded-items">
 						<li><a href="numbers/content/intro.html">A história dos números</a></li>
@@ -55,53 +59,109 @@
 		<section class="content operations">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
-				<div class="content-wrapper-header">
+				<header class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-2-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Operações Numéricas</h4>
+						<h5 class="title">Operações Numéricas</h5>
 					</a>
-				</div>
+				</header>
+
 				<div id="content-2-collapse" class="collapse">
 					<ul class="expanded-items">
 						<li><a href="operations/content/add.html">Adição</a></li>
 						<li><a href="operations/content/subtract.html">Subtração</a></li>
-						<li><a href="">Multiplicação</a></li>
-						<li><a href="">Divisão</a></li>
-						<li><a href="">MMC e MDC</a></li>
+						<li><a href="operations/content/multiply.html">Multiplicação</a></li>
+						<li><a href="operations/content/divide.html">Divisão</a></li>
+
+						<li><a href="operations/content/mmc-mdc.html">MMC e MDC</a></li>
+						<li><a href="operations/content/.html">Expressões Numéricas</a>
+							<hr />
+						</li>
+						<li><a href="operations/content/.html">Operações com Frações</a>
+						</li>
+						<li><a href="operations/content/.html">Adição e Subtração de Frações</a></li>
+						<li>
+							<a href="operations/content/.html">Multiplicação e Divisão</a>
+							<hr />
+						</li>
+						<li><a href="operations/content/.html">Operações com Decimais</a></li>
+						<li><a href="operations/content/.html">Adição e Subtração de Decimais</a></li>
+						<li>
+							<a href="operations/content/.html">Multiplicação e Divisão de Decimais</a>
+							<hr />
+						</li>
+
+						<li>
+							<a href="operations/content/.html">Porcentagem</a>
+						</li>
+
 					</ul>
 				</div>
+
 			</div>
 		</section>
 		<section class="content geometry">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
-				<div class="content-wrapper-header">
+				<header class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-3-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Geometria</span>
+						<h5 class="title">Geometria</h5>
 					</a>
-				</div>
+				</header>
 				<div id="content-3-collapse" class="collapse">
 					<ul class="expanded-items">
-						<li><a href="geometry/content/intro.html">O que é?</a></li>
-						<hr />
-						<li><a href="geometry/content/ponto.html">Ponto, Reta e Plano</a></li>
-						<li><a href="geometry/content/reta.html">Semirreta e Segmento de Reta</a></li>
-						<li><a href="geometry/content/plano.html">Plano</a></li>
-						<li><a href="geometry/content/angulo.html">Ângulo</a></li>
-						<hr />
-						<li><a href="geometry/content/poligono.html">Polígonos</a></li>
-						<li><a href="geometry/content/poligono_convexo.html">Polígonos Convexos</a></li>
-						<li><a href="geometry/content/triangulo.html">Triângulos</a></li>
-						<li><a href="geometry/content/quadrilatero.html">Quadriláteros</a></li>
-						<hr />
-						<li><a href="geometry/content/perimetro.html">Perímetro</a></li>
-						<li><a href="geometry/content/area.html">Área</a></li>
-						<hr />
-						<li><a href="">Sólidos Geométricos</a></li>
-						<li><a href="">Poliedros</a></li>
-						<li><a href="">Corpos Redondos</a></li>
-						<li><a href="">Outros</a></li>
+						<li>
+							<a href="geometry/content/intro.html">O que é?</a>
+							<hr />
+						</li>
+
+						<li>
+							<a href="geometry/content/ponto.html">Ponto, Reta e Plano</a>
+						</li>
+						<li>
+							<a href="geometry/content/reta.html">Semirreta e Segmento de Reta</a>
+						</li>
+						<li>
+							<a href="geometry/content/plano.html">Plano</a>
+						</li>
+						<li>
+							<a href="geometry/content/angulo.html">Ângulo</a>
+							<hr />
+						</li>
+
+						<li>
+							<a href="geometry/content/poligono.html">Polígonos</a>
+						</li>
+						<li>
+							<a href="geometry/content/poligono_convexo.html">Polígonos Convexos</a>
+						</li>
+						<li>
+							<a href="geometry/content/triangulo.html">Triângulos</a>
+						</li>
+						<li>
+							<a href="geometry/content/quadrilatero.html">Quadriláteros</a>
+							<hr />
+						</li>
+						<li>
+							<a href="geometry/content/perimetro.html">Perímetro</a>
+						</li>
+						<li>
+							<a href="geometry/content/area.html">Área</a>
+							<hr />
+						</li>
+						<li>
+							<a href="">Sólidos Geométricos</a>
+						</li>
+						<li>
+							<a href="">Poliedros</a>
+						</li>
+						<li>
+							<a href="">Corpos Redondos</a>
+						</li>
+						<li>
+							<a href="">Outros</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -109,12 +169,12 @@
 		<section class="content scales">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
-				<div class="content-wrapper-header">
+				<header class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-4-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Grandezas e Medidas</span>
+						<h5 class="title">Grandezas e Medidas</h5>
 					</a>
-				</div>
+				</header>
 				<div id="content-4-collapse" class="collapse">
 					<ul class="expanded-items">
 						<li><a href="scales/content/intro.html">Unidades de Medida</a></li>
@@ -126,12 +186,12 @@
 		<section class="content graphs">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
-				<div class="content-wrapper-header">
+				<header class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-5-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Tratamento da Informação</h4>
+						<h5 class="title">Tratamento da Informação</h5>
 					</a>
-				</div>
+				</header>
 				<div id="content-5-collapse" class="collapse">
 					<ul class="expanded-items">
 						<li><a href="scales/content/intro.html">Tratamento da Informação</a></li>
@@ -143,31 +203,41 @@
 		<section class="content quizes">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
-				<div class="content-wrapper-header">
+				<header class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-6-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
-						<span class="title">Quizes</h4>
+						<h5 class="title">Quizes</h5>
 					</a>
-				</div>
+				</header>
 				<div id="content-6-collapse" class="collapse">
 					<ul class="expanded-items">
-						<li><a href="">Números</a></li>
-						<hr/>
-						<li><a href="">Operações Numéricas</a></li>
-						<hr/>
-						<li><a href="geometry/games/game1/game1.html">Geometria</a></li>
-						<hr />
-						<li><a href="">Grandezas e Medidas</a></li>
-						<hr />
-						<li><a href="">Tratamento da Informação</a></li>
-						<hr />
+						<li>
+							<a href="">Números</a>
+							<hr />
+						</li>
+						<li>
+							<a href="">Operações Numéricas</a>
+							<hr />
+						</li>
+						<li>
+							<a href="geometry/games/game1/game1.html">Geometria</a>
+							<hr />
+						</li>
+						<li>
+							<a href="">Grandezas e Medidas</a>
+							<hr />
+						</li>
+						<li>
+							<a href="">Tratamento da Informação</a>
+							<hr />
+						</li>
 						<li><a href="">Geral</a></li>
 					</ul>
 				</div>
 			</div>
 		</section>
-		<hr/>
-		<section class="expanded-items">
+		<hr />
+		<div class="expanded-items">
 			<a class="text-dark d-block" href="general/favorites.html"><i class="fa fa-star mr-3"></i>Favoritos</a>
 			<a class="text-dark d-block" href="general/about.html"><i class="fa fa-info-circle mr-3"></i>Sobre o Aplicativo</a>
 			<a class="text-dark d-block" href="general/help.html"><i class="fa fa-question-circle mr-3"></i>Ajuda</a>
@@ -177,7 +247,8 @@
 				Ativar Modo Noturno
 			</a>
 			<a class="text-dark d-block" href="general/content/template.html"><i class="fa fa-file mr-3"></i>See Template</a>
-		</section>
+		</div>
 	</main>
 </body>
+
 </html>

@@ -22,6 +22,7 @@ a,
 .text-dark {
     color: #f9f9f9 !important
 }
+
 a.text-dark:hover{
     color: #aaa !important
 }

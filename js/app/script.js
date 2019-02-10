@@ -15,12 +15,10 @@ function toggleText(){
 function getTitle(){
     return document.title;
 }
-
 function toggleNightMode(){
     this.nightMode = !this.nightMode;
     setNightMode(this.nightMode);
 }
-
 function setNightMode(state) {
     var icon = $("<i/>").addClass("fa fa-moon mr-3");
     var text = 'Ativar modo noturno';
@@ -104,4 +102,9 @@ function togglePicture(){
     $element.attr("src", $element.attr("data-toggle"));
     $element.attr("data-toggle", oldSRC);
     //console.log($element.attr("src"));
+}
+
+function storeJSON(key, value) {
+    localStorage[key] = JSON.stringify(value);
+    return key + " , " + value;
 }

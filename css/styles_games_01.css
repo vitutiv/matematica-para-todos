@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: radia-gradient(circle,#fff,#ccc);
+}
+
+h1 {
+  text-align: center;
+  color: #4DB6AC;
+  font-size: 60px ;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 1px #ccc;
+  text-shadow: 0.125rem 0.125rem 0.0625rem #ccc;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+
+.col-12 {
+  padding: 0;
+}
+
+#mainBox {
+  width: 100%;
+  background-color: #4DB6AC;
+  border-radius: 10px;
+  border-radius: 0.625rem;
+  position: relative;
+  padding: 20px;
+}
+
+#scoreBox {
+  background-color: #fff;
+  position: relative;
+  padding: 10px;
+  padding: 0.625rem;
+  border-radius: 5px;
+  border-radius: 0.3125rem;
+}
+
+#correctBox{
+    background-color:lightgreen;
+    position: absolute;
+    padding:10px;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+}
+
+#wrongBox{
+    background-color: lightcoral;
+    position: absolute;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+}
+
+#questionBox{
+    background-color: lightsalmon;
+    height: 6rem;
+    width: 100%;
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+}
+
+#instructionBox{
+    background-color: lightslategray;
+    margin:10px auto;
+    text-align: center;
+    line-height: 45px;
+    color:#fff;
+}
+
+.box{
+    background-color: #fff;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.box:active , #startresetBox:active{
+    background-color:lightgray;
+
+}
+.box:last-child{
+    margin-right: 0;
+}
+
+#timeremainingBox{
+    background-color: lightgreen;
+    position: absolute;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+#startresetBox{
+    background-color: #ccc;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#gameOverBox{
+    position: absolute;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    top: 25%;
+    z-index: 50;
+    display: none;
+}
