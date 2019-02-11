@@ -1,4 +1,3 @@
-var contents = [];
 function loadSearchable() {
     $("li a").each(function (index, element) {
         contents.push({
@@ -16,7 +15,10 @@ function search() {
     var regex = new RegExp(term, 'i');
     contents.forEach(function (content) {
         if (regex.test(content.name) || term === "") {
-            el = $("#search-demo").clone().attr({ 'id': '', 'href': content.href });
+            el = $("#search-demo").clone().attr({
+                'id': '',
+                'href': content.href
+            });
             $(el).find(".content-icon").css('background-color', content.color);
             $(el).find(".theme").text(content.theme);
             $(el).find(".name").text(content.name);
@@ -37,7 +39,9 @@ var searchOn = function () {
 var searchOff = function () {
     $(".search-results").css("display", "none");
     console.log("searchoff");
-    $(".main-search").blur(function () { this.value = "" });
+    $(".main-search").blur(function () {
+        this.value = ""
+    });
     $(".search-form").removeClass("on-search");
     $(".header").removeClass("header-hidden");
     $(".contents").removeClass("contents-hidden");
@@ -53,5 +57,8 @@ $(".main-search").focus(function () {
     search();
 });
 
+var contents = [];
 
-loadSearchable();
+$(document).ready(function () {
+    loadSearchable();
+});

@@ -1,36 +1,41 @@
 $("#page-title").html(getTitle);
 var nightMode = localStorage['nightToggle'] == 'true';
 setNightMode(nightMode);
-$('#fav-action').click(function(){favorite()});
-$('#fav-action').attr('href', 'javascript:void(0)');
+$('#fav-action').click(function () {
+    favorite()
+});
 findFavorite();
 var buttonText = "Ocultar Resposta";
-function toggleText(){
-    var id = "#"+event.target.id;
+
+function toggleText() {
+    var id = "#" + event.target.id;
     var $element = $(id);
     var text = $(id).html();
     $element.html(buttonText);
     this.buttonText = text;
 }
-function getTitle(){
+
+function getTitle() {
     return document.title;
 }
-function toggleNightMode(){
+
+function toggleNightMode() {
     this.nightMode = !this.nightMode;
     setNightMode(this.nightMode);
 }
+
 function setNightMode(state) {
     var icon = $("<i/>").addClass("fa fa-moon mr-3");
     var text = 'Ativar modo noturno';
     for (var i = 0; i < document.styleSheets.length; i++) {
         if (document.styleSheets[i].href != null && document.styleSheets[i].href.includes('night')) {
-            if (state){
+            //console.log(document.styleS1heets[i].id);
+            if (state) {
                 icon = $("<i/>").addClass("fa fa-sun mr-3");
                 text = "Desativar modo noturno";
             }
             document.styleSheets[i].disabled = !state;
             localStorage['nightToggle'] = JSON.stringify(state);
-            console.log("Setting  'Night Mode' applied. Enabled: " + state + ", URL: " + document.styleSheets[i].href);
             break;
         }
     }
@@ -38,39 +43,36 @@ function setNightMode(state) {
     $("#toggleNightMode").append(icon).append(text);
     return state;
 }
-function toggleLiteMode(){
+
+function toggleLiteMode() {
     var batterySaver = localStorage['batterySaverToggle'] == 'true';
     setBatterySaver(!batterySaver);
 }
-function setLiteMode(state){
+
+function setLiteMode(state) {
     localStorage['liteMode'] = JSON.stringify(state);
     return state;
 }
-function favorite(){
-    var favorites = [];
-    var replace = localStorage['favorites'] != undefined;
-    if (replace){
-        favorites = JSON.parse(localStorage['favorites']);
-    }
-    //console.log(favorites);
 
+function favorite() {
+    var favorites = getFavorites();
     var favorite = {
         title: $('#page-title').html(),
-        category: $('#page-subtitle').html,
+        category: $('#page-subtitle').html(),
         url: location.pathname
     }
 
     var removed = false;
     for (var i = 0; i < favorites.length; i++) {
-        if(favorites[i].url == favorite.url){
+        if (favorites[i].url == favorite.url) {
             //console.log(favorites[i]);
-            favorites.splice(i,1);
+            favorites.splice(i, 1);
             $('#fav-icon').removeClass('fa');
             $('#fav-icon').addClass('far');
             removed = true;
         }
     }
-    if (!removed){
+    if (!removed) {
         favorites.push(favorite);
         $('#fav-icon').removeClass('far');
         $('#fav-icon').addClass('fa');
@@ -78,12 +80,10 @@ function favorite(){
 
     localStorage['favorites'] = JSON.stringify(favorites);
 }
-function findFavorite(){
-    var favorites = [];
-    var replace = localStorage['favorites'] != undefined;
-    if (replace){
-        favorites = JSON.parse(localStorage['favorites']);
-    }
+
+function findFavorite() {
+    var favorites = getFavorites();
+
     var url = location.pathname;
     for (var i = 0; i < favorites.length; i++) {
         if (favorites[i].url == url) {
@@ -95,8 +95,13 @@ function findFavorite(){
     }
     return false;
 }
-function togglePicture(){
-    var elementID = "#"+(event.target.id);
+
+function getFavorites() {
+    return (localStorage['favorites'] != undefined) ? JSON.parse(localStorage['favorites']) : [];
+}
+
+function togglePicture() {
+    var elementID = "#" + (event.target.id);
     var $element = $(elementID);
     var oldSRC = $(elementID).attr("src");
     $element.attr("src", $element.attr("data-toggle"));
