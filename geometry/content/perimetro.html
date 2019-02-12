@@ -20,7 +20,7 @@
         <!--Animation goes here-->
     </header>
     <main class="container">
-        <div class="heading">
+        <div class="heading" id="page-heading">
             <div class="row">
                 <div class="col float-left">
                     <h1 class="title" id="page-title"></h1>
@@ -32,7 +32,7 @@
             </div>
         </div>
         <hr class="mx-2" />
-        <div class="content">
+        <div class="content" id="page-content">
             <p>
                 O perímetro é a medida que tem o contorno de uma figura plana.
             </p>
@@ -53,8 +53,7 @@
                     </figure>
                 </div>
                 <div class="card-footer">
-                    <button id="show-1" class="btn btn-block" data-toggle="collapse" data-target="#resposta" onclick="toggleText()">Mostrar
-                        Resposta</button>
+                    <button id="show-1" class="btn btn-block" data-toggle="collapse" data-target="#resposta" onclick="toggleText()">Mostrar Resposta</button>
                     <div id="resposta" class="collapse" style="padding: 10px;">
                         <h3>Resposta</h3>
                         <p><b>Somando as medidas dos lados da imagem:</b> 60 + 100 + 60 + 100 = <b>320</b>. <br />
@@ -65,8 +64,10 @@
             </div>
             <h3>Perímetro de um círculo</h3>
             <p>O perímetro do círculo, também chamado de comprimento da circunferência, 2 π raio</p>
+        </div>
+        <div class="references" id="page-references">
             <h3>Referências</h3>
-            <div class="list-group">
+            <div class="list-group references-list" id="references-list">
                 <a class="list-group-item list-group-item-action" href="https://mundoeducacao.bol.uol.com.br/matematica/perimetro.htm">Perímetro;
                     Mundo Educação.
                     <span class="text-muted">Acesso em 03 de dezembro de 2018.</span>

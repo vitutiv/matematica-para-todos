@@ -21,7 +21,7 @@
         <!--Animation goes here-->
     </header>
     <main class="container">
-        <div class="heading">
+        <div class="heading" id="page-heading">
             <div class="row">
                 <div class="col float-left">
                     <!--LEAVE IT EMPTY. The script sets it automatically as the page title. You can thank me later.-->
@@ -36,7 +36,7 @@
             </div>
         </div>
         <hr class="mx-2" />
-        <div class="content">
+        <div class="content" id="page-content">
             <div class="card">
                 <div class="card-body">
                     Pedro tinha 4 carrinhos.
@@ -92,9 +92,10 @@
             <button class="btn btn-block" onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','+');location.href='../games/minigame_01/index.html'">Quiz
                 da Adição</button>
             <button class="btn btn-block" onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','+');location.href='../games/minigame_02/index.html'">Complete a Adição</button>
-
+        </div>
+        <div class="references" id="page-references">
             <h3>Referências</h3>
-            <div class="list-group">
+            <div class="list-group references-list" id="references-list">
                 <a class="list-group-item list-group-item-action" href="https://escolakids.uol.com.br/operacao-da-adicao.htm">
                     NOÉ, Marcos. “Operação da adição”; Escola Kids.
                     <span class="text-muted">Acesso: 01 de outubro de 2018.</span>

@@ -1,10 +1,11 @@
+@charset "utf-8";
 @font-face {
-  font-family: 'Boogaloo';
+  font-family: 'Boogaloo', sans-serif;
   src: url('../ttf/Boogaloo-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   src: url('../ttf/OpenSans-Regular.ttf') format('truetype');
 }
 
@@ -26,11 +27,13 @@
   --main-orange: #ff6d00;
   --main-deep-orange: #dd2c00;
   --main-brown: #3e2723;
-  --main-grey: #212121;
-  --main-blue-grey: #263238;
-  --mainDarkGray: #4F5050;
-  --mainLightGray: #707272;
-  --mainBackground: #E1E4E5;
+  --main-gray: #212121;
+  --main-blue-gray: #263238;
+  --main-dark-gray: #4F5050;
+  --main-light-gray: #707272;
+  --main-background: #E1E4E5;
+  --main-white: #e1e1e1;
+  --main-black: #111;
 }
 
 a {
@@ -45,8 +48,13 @@ body {
   position: relative;
   font-family: 'Open Sans', sans-serif;
   padding: 4rem 1rem 3rem;
-  color: var(--mainDarkGray);
-  background-color: var(--mainBackground);
+  color: var(--main-dark-gray);
+  background-color: var(--main-background);
+}
+
+button {
+  color: white;
+  padding: 2rem 0 !important;
 }
 
 button:focus {
@@ -132,7 +140,9 @@ input:focus {
   transition: 0.2s ease
 }
 
-/*.watermark {
+/*
+OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
+.watermark {
   left: 50%;
   opacity: .5;
   position: fixed;
@@ -141,8 +151,7 @@ input:focus {
   width: auto;
   z-index: -1
 }
-
-OBS: O LOGO DO IF NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.*/
+*/
 
 .numbers .content-background, .numbers header, .numbers button, .numbers .bg-theme {
   color: white;
@@ -225,7 +234,7 @@ OBS: O LOGO DO IF NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.*/
 }
 
 .search-form a {
-  color: var(--mainDarkGray)
+  color: var(--main-dark-gray)
 }
 
 .search-form i {
@@ -255,12 +264,12 @@ OBS: O LOGO DO IF NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.*/
 }
 
 .search-result .theme {
-  color: var(--mainDarkGray);
+  color: var(--main-dark-gray);
   font-weight: bold
 }
 
 .search-result .name {
-  color: var(--mainLightGray);
+  color: var(--main-light-gray);
   font-size: 0.9rem
 }
 
@@ -308,6 +317,10 @@ OBS: O LOGO DO IF NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.*/
   border-radius: .6rem;
   overflow: hidden;
   margin-bottom: 1rem
+}
+
+.content-page .content {
+  border-radius: 0
 }
 
 a.trigger {
@@ -394,14 +407,14 @@ a.trigger {
   box-sizing: border-box
 }
 
-#canvasPrincipal {
+.canvasPrincipal {
   margin-left: auto;
   margin-right: auto
 }
 
-#fundo {
+.fundo {
   align-items: center;
-  background-color: #fff;
+  background-color: var(--main-white);
   display: flex;
   flex-wrap: wrap;
   justify-content: center
@@ -481,11 +494,17 @@ p {
   text-indent: 1rem;
 }
 
+.list-group {
+  border-radius: 0;
+}
+
 .list-group-item {
   text-indent: 0;
   background: transparent;
-  border: 0;
-  border-bottom: 1px solid var(--mainLightGray);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-color: var(--main-light-gray);
 }
 
 ul.styled-list li {

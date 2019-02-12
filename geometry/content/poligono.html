@@ -20,7 +20,7 @@
         <!--Animation goes here-->
     </header>
     <main class="container">
-        <div class="heading">
+        <div class="heading" id="page-heading">
             <div class="row">
                 <div class="col float-left">
                     <h1 class="title" id="page-title"></h1>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <hr class="mx-2" />
-        <div class="content">
+        <div class="content" id="page-content">
             <p>A palavra polígono vem das palavras gregas <b>πολυ (poli)</b> = muitos e <b>γωνο (gono)</b> que
                 significa ângulo.
                 O polígono é uma <b>figura plana</b> formada apenas por linhas retas que só se cruzam nas suas
@@ -93,8 +93,8 @@
                 </div>
             </div>
             <h3>Propriedades</h3>
-            <figure class="col-12 col-md-8 col-lg-6 col-xg-4">
-                <img src="img/poligonos/poligonos.svg" onclick="changeState('poligonos')" />
+                <figure class="col-12 col-md-8 col-lg-6 col-xg-4">
+                <img src="img/poligonos/poligonos.svg" data-toggle="img/poligonos/poligonos1.svg" class="interactive"/>
                 <figcaption>Imagem: Exemplos de polígonos</figcaption>
             </figure>
             <h3>Nomes dos polígonos</h3>
@@ -160,8 +160,10 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+        <div class="references" id="page-references">
             <h3>Referências</h3>
-            <div class="list-group">
+            <div class="list-group references-list" id="references-list">
                 <a class="list-group-item list-group-item-action" href="https://www.somatematica.com.br/fundam/poligon.php">SOMATEMÁTICA.
                     Polígonos.
                     <span class="text-muted">Acesso em 23 de outubro de 2018.</span>

@@ -21,7 +21,7 @@
         <!--Animation goes here-->
     </header>
     <main class="container">
-        <div class="heading">
+        <div class="heading" id="page-heading">
             <div class="row">
                 <div class="col float-left">
                     <!--LEAVE IT EMPTY. The script sets it automatically as the page title. You can thank me later.-->
@@ -36,9 +36,9 @@
             </div>
         </div>
         <hr class="mx-2" />
-        <div class="content">
+        <div class="content" id="page-content">
             <p>
-                Numa operação utilizando a multiplicação, o multiplicador e o multiplicando são chamados de fatores, e o resultado é o
+                Em uma operação utilizando a multiplicação, o multiplicador e o multiplicando são chamados de fatores, e o resultado é o
                 produto resultante da multiplicação. <br/>
                 Exemplos: 10 x 2 = 20 ou 40 x 3 = 120.
             </p>
@@ -85,12 +85,20 @@
             </p>
             
             <h3>Jogos</h3>
-                <button class="btn btn-block" onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','*');location.href='../games/minigame_01/index.html'">Jogo da Multiplicação</button>
-            <button class="btn btn-block" onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','*');location.href='../games/minigame_02/index.html'">Complete a Multiplicação</button>
-
-            <h3>Referências</h3>
             <div class="list-group">
-                <a class="list-group-item list-group-item-action" href="https://www.soescola.com/2017/08/cartazes-operacoes-matematicas.html/cartazes-operacoes-matematicas-termos-da-multiplicacao-2">
+                <button class="btn btn-block" onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','*');location.href='../games/minigame_01/index.html'">
+                    Jogo da Multiplicação
+                </button>
+                <button class="btn btn-block" onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','*');location.href='../games/minigame_02/index.html'">
+                    Complete a Multiplicação
+                </button>
+            </div>
+        </div>
+        <div class="references" id="page-references">
+            <h3>Referências</h3>
+            <div class="list-group references-list" id="references-list">
+                <a class="list-group-item list-group-item-action"
+                    href="https://www.soescola.com/2017/08/cartazes-operacoes-matematicas.html/cartazes-operacoes-matematicas-termos-da-multiplicacao-2">
                     SÓ ESCOLA; Cartazes operações maemáticas: Termos da adição, subtração, multiplicação e divisão.
                     <span class="text-muted">Acesso: 23 de setembro de 2018.</span>
                 </a>

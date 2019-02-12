@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/styles_night.css">
     <script defer src="../../js/jquery.min.js"></script>
@@ -21,7 +21,7 @@
         <!--Animation goes here-->
     </header>
     <main class="container">
-        <div class="heading">
+        <div class="heading" id="page-heading">
             <div class="row">
                 <div class="col float-left">
                     <!--LEAVE IT EMPTY. The script sets it automatically as the page title. You can thank me later.-->
@@ -36,20 +36,26 @@
             </div>
         </div>
         <hr class="mx-2" />
-        <div class="content">
+        <div class="content" id="page-content">
             <p>
-                A divisão é o ato de dividir em partes iguais para todos. Consiste em dividir dois números, o dividendo e o divisor, que produz dois resultados chamados de quociente e resto. Seu símbolo é o <b>"÷"</b>. No entanto pode variar, por exemplo, e usar a barra <b>"/"</b>.
+                A divisão é o ato de dividir em partes iguais para todos. Consiste em dividir dois números, o
+                dividendo
+                e o divisor, que produz dois resultados chamados de quociente e resto. Seu símbolo é o
+                <b>"÷"</b>. No
+                entanto pode variar, por exemplo, e usar a barra <b>"/"</b>.
             </p>
             <div class="card bg-theme">
                 <div class="card-body text-center">
                     <b>Lembre-se:</b> A divisão é a operação inversa da multiplicação.
                 </div>
             </div>
-            <p class="text-center">        
+            <p class="text-center">
                 <b>Observe:</b> 21 ÷ 3 = 7, com resto 0. Essa divisão é exata porque o resto é 0.
             </p>
             <p>
-                Observe agora esta divisão: 22 ÷ 3 = 7, com resto 1. Essa é uma divisão não exata, porque tem resto, isto é, o resto é diferente de zero.
+                Observe agora esta divisão: 22 ÷ 3 = 7, com resto 1. Essa é uma divisão não exata, porque tem
+                resto,
+                isto é, o resto é diferente de zero.
                 Paramos a divisão quando o valor obtido no resto for menor que o valor do divisor, no exemplo
                 mostrado o resto é 1, e o divisor é 3, assim, visto que 1 é menor que 3, a divisão é finalizada.
 
@@ -59,10 +65,10 @@
 
             <ul class="list-group">
                 <li class="list-group-item">
-                    Numa divisão, o resto deve ser sempre menor que o divisor;
+                    Em uma divisão, o resto deve ser sempre menor que o divisor;
                 </li>
                 <li class="list-group-item">
-                    Um número dividido por 1 (um) tem como resultado ele mesmo. <br/>
+                    Um número dividido por 1 (um) tem como resultado ele mesmo. <br />
                     <b>Exemplo:</b> 2 ÷ 1 = 2
                 <li class="list-group-item">
                     Um número dividido por ele tem como resultado o número 1 (um).<br />
@@ -72,24 +78,29 @@
                     <b>Exemplo:</b> 0 ÷ 2 = 0
                 </li>
                 <li class="list-group-item">
-                    Não existe divisão por zero. <br/>
-                    <b>Exemplo:</b> 5 ÷ 0, não existe, porque não existe número que multiplicado por 0 seja igual a 5.
+                    Não existe divisão por zero. <br />
+                    <b>Exemplo:</b> 5 ÷ 0, não existe, porque não existe número que multiplicado por 0 seja
+                    igual a 5.
                 </li>
             </ul>
             <h3>Jogos</h3>
-            <button class="btn btn-block" onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','/');location.href='../games/minigame_01/index.html'">Jogo
+            <button class="btn btn-block"
+                onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','/');location.href='../games/minigame_01/index.html'">Jogo
                 da Divisão</button>
-            <button class="btn btn-block" onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','/');location.href='../games/minigame_02/index.html'">Complete
+            <button class="btn btn-block"
+                onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','/');location.href='../games/minigame_02/index.html'">Complete
                 a Divisão</button>
+        </div>
+        <div class="references" id="page-references">
             <h3>Referências</h3>
-            <div class="list-group">
-                <a class="list-group-item list-group-item-action" href="https://escolakids.uol.com.br/operacao-da-divisao.htm">
-                NOÉ, Marcos. “Operação da divisão”; Escola Kids
+            <div class="list-group references-list" id="references-list">
+                <a class="list-group-item list-group-item-action"
+                    href="https://escolakids.uol.com.br/operacao-da-divisao.htm">
+                    NOÉ, Marcos. “Operação da divisão”; Escola Kids
                     <span class="text-muted">Acesso: 01 de outubro de 2018.</span>
                 </a>
             </div>
         </div>
     </main>
 </body>
-
 </html>

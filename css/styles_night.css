@@ -2,44 +2,43 @@
 /* CSS Document */
 
 body {
-    background-color: #111 !important;
+    background-color: var(--main-black) !important
 }
 
 .header {
-    color: #e1e1e1 !important
+    color: var(--main-white) !important
 }
 
-/*Testing purposes */
 canvas {
-    border: 1px solid black;
+    border: .1rem solid black
 }
 
-body,
-h1,
-h2,
-p,
-a,
-.text-dark {
+body, h1, h2, p, a, .text-dark {
     color: #f9f9f9 !important
 }
 
-a.text-dark:hover{
-    color: #aaa !important
+a.text-dark:hover {
+    color: var(--main-light-gray) !important
 }
+
 .nightshift {
     filter: invert(100);
 }
 
-.card,
-.list-group-item,
-table,
-tr {
+.card, table, tr
+/*,  .list-group-item*/
+
+    {
     background-color: #1d2124;
-    border-color: #333
+    border-color: var(--main-gray)
 }
 
-.list-group-item:hover {
-    background-color: #222
+.list-group-item {
+    border-bottom-color: var(--main-light-gray) !important
+}
+
+a.list-group-item:hover {
+    background-color: var(--main-gray)
 }
 
 .d-light {
@@ -48,4 +47,21 @@ tr {
 
 .d-dark {
     display: initial;
+}
+
+.search-form {
+    background: var(--main-gray);
+}
+
+.main-search {
+    color: var(--main-white)!important;
+}
+
+.search-result {
+    border-bottom: .25rem solid var(--main-gray);
+    color: var(--main-white) !important
+}
+
+.search-result .theme, .search-result.info {
+    color: var(--main-white) !important;
 }
