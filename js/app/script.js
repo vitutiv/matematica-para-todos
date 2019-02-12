@@ -1,3 +1,4 @@
+
 $("#page-title").html(getTitle);
 var nightMode = localStorage['nightToggle'] == 'true';
 setNightMode(nightMode);

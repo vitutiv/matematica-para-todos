@@ -6,7 +6,7 @@
         <style>
             img {
                 display: block;
-                margin:10px auto;
+                margin:1rem auto;
                 max-width: 100%;
                 width: initial
             }
@@ -43,25 +43,25 @@
         </div>
         <div class="mt-2">
             <!-- Button trigger modal -->
-            <button class="btn-acao col-12" id="btn-continuar" data-toggle="modal" data-target="">CONTINUAR</button>
+            <button class="btn btn-acao col-12" id="btn-continuar" data-toggle="modal" data-target="">CONTINUAR</button>
         </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">FIM DE JOGO!</h5>
-                        </div>
-                        <div class="modal-body">
-                            <span id="score-box">O SCORE DEVERIA ESTAR AQUI</span>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="col-6 btn-success" data-dismiss="modal" onclick="location.href = location.href">Jogar Novamente</button>
-                            <button type="button" class="col-6 btn-danger" onclick ="exitGame()">Sair</button>
-                        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">FIM DE JOGO!</h5>
+                    </div>
+                    <div class="modal-body">
+                        <span id="score-box">O SCORE DEVERIA ESTAR AQUI</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="col-6 btn-success" data-dismiss="modal" onclick="location.href = location.href">Jogar Novamente</button>
+                        <button type="button" class="col-6 btn-danger" onclick ="exitGame()">Sair</button>
                     </div>
                 </div>
             </div>
+        </div>
     </body>
 </html>
