@@ -38,23 +38,41 @@
         <hr class="mx-2" />
         <div class="content" id="page-content">
             <div class="card">
+                <div class="card-header">
+                    <h3>Perguntinha</h3>
+                </div>
                 <div class="card-body">
-                    Pedro tinha 4 carrinhos.
+                    <h4>Pedro tinha 4 carrinhos.</h4>
                     <figure>
-                        <img src="" alt="">
+                        <img src="img/4-carros.svg">
+                        <figcaption>Imagem: 4 carrinhos</figcaption>
                     </figure>
-                    Ganhou mais 3 carrinhos de seu avô.
+                    <h4>Ganhou mais 3 carrinhos de seu avô.</h4>
                     <figure>
-                        <img src="" alt="">
+                        <img src="img/3-carros.svg">
+                        <figcaption>Imagem: 3 carrinhos</figcaption>
                     </figure>
-                    Com quantos carrinhos Pedro ficou?
+                    <h4>Com quantos carrinhos Pedro ficou?</h4>
                 </div>
                 <div class="card-footer">
-                    <form>
-                        <div class="input-group"><input type="text" class="form-control"></div>
-                    </form>
+                    <button id="show-1" class="btn btn-block" data-toggle="collapse" data-target="#resposta" onclick="toggleText()">Mostrar
+                        Resposta</button>
+                    <div id="resposta" class="collapse" style="padding: 10px;">
+                        <h3>Resposta</h3>
+                        <h4>4 + 3 = 7</h4>
+                        <p>Somando os 4 carrinhos que Pedro tem, com os 3 carrinhos que seu avô lhe deu, pedrinho agora tem 7 carrinhos.
+                        </p>
+                        <figure>
+                            <img src="img/7-carrinhos.svg">
+                            <figcaption>7 carrinhos</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
+            <figure>
+                <img src="img/soma.svg"/>
+                <figcaption>Três gatinhos mais um gatinho é igual a quatro gatinhos.</figcaption>
+            </figure>
             <p>
                 A adição é conhecida popularmente como soma. Adicionar é o mesmo que agrupar ou unir.
                 O sinal indicativo da adição é o <b>mais (+)</b>.
@@ -73,8 +91,11 @@
             <p>
                 Você já deve ter ouvido falar que a mudança de parcelas não altera o resultado da soma. Isso é verdade, veja:
                 <br/>
-                <b>Exemplo: </b> 5 + 2 = 7 e 2 + 5 = 7
             </p>
+            <figure>
+                <img src="img/exmplo-comutativa.svg">
+                <figcaption class="sr-only">5 + 2 = 7 e 2 + 5 = 7</figcaption>
+            </figure>
             <h4>Associativa</h4>
             <p>
                 A propriedade associativa da adição nos diz que independentemente da forma que somarmos as parcelas, o resultado é o mesmo.
