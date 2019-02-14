@@ -39,17 +39,32 @@
         <div class="content" id="page-content">
             <div class="card">
                 <div class="card-body">
-                    Carlinhos tem uma coleção de 8 carrinhos.
-
-                    Ele deu 3 carrinhos para o seu primo Henrique. Com quantos carrinhos ele ficou?
+                    <h4> Carlinhos tem uma coleção de 8 carrinhos.</h4>
+                    <figure>
+                        <img src="img/8-carrinhos.svg">
+                        <figcaption class="sr-only">8 carrinhos de pedro</figcaption>
+                    </figure>
+                    <h4>Ele deu 3 carrinhos para o seu primo Henrique.</h4>
+                    <figure>
+                        <img src="img/8-3-carrinhos.svg">
+                        <figcaption class="sr-only">3 carrinhos que Pedro deu para seu primo Henrique</figcaption>
+                    </figure>
+                    <h4>Com quantos carrinhos ele ficou?</h4>
                 </div>
                 <div class="card-footer">
                     <button class="btn btn-block" data-toggle="collapse" data-target="#resposta">Mostrar resposta</button>
                     <div id="resposta" class="collapse">
                         <p>
-                            A operação a ser realizada é a da subtração. <br/>
-                            8 – 3 = 5 → 8 menos 3 é igual a 5. <br/>
-                            Portanto, Carlinhos ficou com 5 carrinhos.
+                            <h4>
+                                8 – 3 = 5 → 8 menos 3 é igual a 5.
+                            </h4>
+                            <figure>
+                                <img src="img/5-carrinhos.svg">
+                                <figcaption class="sr-only">Os carrinhos</figcaption>
+                            </figure>
+                            <h4>
+                                Portanto, Carlinhos ficou com 5 carrinhos.
+                            </h4>
                         </p>
                     </div>
                 </div>
@@ -69,7 +84,7 @@
                     <h4 class="card-title">Cuidado!</h4>
                 </div>
                 <div class="card-body">
-                    A subtração não satisfaz a propriedade comutativa, ou seja, ao trocar a ordem em que os valores são subtraídos
+                    A subtração <b>não</b> satisfaz a propriedade comutativa, ou seja, ao trocar a ordem em que os valores são subtraídos
                     o resultado é alterado. Que nesse caso será um valor com sinal trocado. <br/>
                     <b>Exemplos:</b> 4 – 1 = 3 e 1 – 4 = -3
                 </div>
@@ -88,7 +103,7 @@
             </p>
             <figure>
                 <img src="img/exemplo-anulacao.svg"/>
-                <figcaption> <b>Exemplo: </b> 4 - 4 = 0</figcaption>
+                <figcaption class="sr-only"> <b>Exemplo: </b> 4 - 4 = 0</figcaption>
             </figure>
             <h3>Jogos</h3>
             <button class="btn btn-block" onclick="storeJSON('randomQuiz', 'false'); storeJSON('quizSelection','-');location.href='../games/minigame_01/index.html'">Jogo da Subtração</button>
