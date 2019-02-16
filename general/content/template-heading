@@ -1,0 +1,17 @@
+<div class="heading" id="page-heading">
+    <div class="row">
+        <div class="col float-left">
+            <!--LEAVE IT EMPTY. The script sets it automatically as the page title. You can thank me later.-->
+            <h1 class="title" id="page-title"></h1>
+            <!--Still, this one needs to be set manually.-->
+            <h2 class="subtitle text-muted" id="page-subtitle">THEME TITLE HERE (EX: GEOMETRY)</h2>
+        </div>
+        <div class="float-right">
+            <!--Click event is set on javascript for comfort purposes, dont worry and thank me later-->
+            <a id="fav-action" href="javascript:void(0)" class="text-muted">
+                <i id="fav-icon" class="far fa-heart fa-2x"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<hr class="mx-2" />

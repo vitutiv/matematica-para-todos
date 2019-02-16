@@ -1,11 +1,10 @@
-
-$("#page-title").html(getTitle);
 var nightMode = localStorage['nightToggle'] == 'true';
 setNightMode(nightMode);
-$('#fav-action').click(function () {
-    favorite()
-});
-findFavorite();
+
+function getTitle() {
+    return document.title;
+}
+
 var buttonText = "Ocultar Resposta";
 
 function toggleText() {
@@ -14,10 +13,6 @@ function toggleText() {
     var text = $(id).html();
     $element.html(buttonText);
     this.buttonText = text;
-}
-
-function getTitle() {
-    return document.title;
 }
 
 function toggleNightMode() {
