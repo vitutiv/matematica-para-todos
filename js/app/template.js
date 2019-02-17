@@ -1,9 +1,3 @@
-$.get("../../general/content/template-head").done((data) => {
-    $("head").append(data);
-    var nightMode = localStorage['nightToggle'] == 'true';
-    setNightMode(nightMode);
-});
-
 $.get("../../general/content/template-heading").done((data) => {
     $("main").prepend(data);
     $("#page-title").html(getTitle);
@@ -12,6 +6,7 @@ $.get("../../general/content/template-heading").done((data) => {
         favorite();
     });
     findFavorite();
+    window.scrollTo(0,0);
 });
 
 $("main").addClass("container");
