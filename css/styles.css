@@ -156,8 +156,8 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
 */
 .start-page .content-wrapper-header{
   background-repeat: no-repeat !important;
-  background-position: center right !important;
-  background-size: contain !important;
+  background-position: center center !important;
+  background-size : contain !important;
 }
 
 .start-page .numbers .content-wrapper-header {
@@ -358,9 +358,12 @@ a.trigger {
 }
 
 .content-wrapper {
-  padding: 0 1em 0 3em;
+  padding: 0 1rem 0 1rem;
 }
 
+.content-wrapper .collapse{
+  padding-left: 2rem !important;
+}
 .content-wrapper-header {
   padding-bottom: 1rem;
   height: 10rem !important;
@@ -394,10 +397,14 @@ a.trigger {
 }
 
 .trigger i {
+
+  /*
   position: absolute;
   margin-left: -2.2rem
-}
+*/
 
+  margin-right: 1rem;
+}
 .trigger .rotated {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg)
