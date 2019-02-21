@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        img {
+            display: block;
+            margin: 1rem auto;
+            max-width: 100%;
+            width: initial
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+    <script defer src="../js/jquery.min.js"></script>
+    <script defer src="../js/bootstrap.min.js"></script>
+    <script defer src="js/game_numbers_gold.js"></script>
+    <script defer src="game1.js"></script>
+    <title>Quiz - Números</title>
+</head>
+
+<body class="container-fluid">
+    <div class="card" id="fundo" style="border-radius: 0">
+        <div class="card-body">
+            <img src="../img/emoji_u1f641.svg" id="mainPic" alt="Figura do minigame" />
+            <h2 id="hPergunta">A pergunta deveria estar aparecendo aqui</h2>
+            <canvas id="canvasPrincipal">
+                Aparentemente você não pode visualizar esta imagem :( <br />
+                A versão do android ou do webview não suporta este recurso.
+            </canvas>
+        </div>
+    </div>
+    <div id="jogoBotoes">
+        <button class="btn btn-opcao btn-block" id="btn btn-opcao1">Opção 1</button>
+        <button class="btn btn-opcao btn-block" id="btn btn-opcao2">Opção 2</button>
+        <button class="btn btn-opcao btn-block" id="btn btn-opcao3">Opção 3</button>
+        <button class="btn btn-opcao btn-block" id="btn btn-opcao4">Opção 4</button>
+    </div>
+    <div id="jogoCanvas" class="row align-items-center" style="padding: 0 15px">
+        <canvas class="canvas-opcao col-xs-12 col-sm-6 option" id="canvasOpcao1"></canvas>
+        <canvas class="canvas-opcao col-xs-12 col-sm-6 option" id="canvasOpcao2"></canvas>
+        <canvas class="canvas-opcao col-xs-12 col-sm-6 option" id="canvasOpcao3"></canvas>
+        <canvas class="canvas-opcao col-xs-12 col-sm-6 option" id="canvasOpcao4"></canvas>
+    </div>
+    <div class="mt-2">
+        <!-- Button trigger modal -->
+        <button class="btn btn-acao col-12" id="btn-continuar" data-toggle="modal" data-target="">CONTINUAR</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">FIM DE JOGO!</h5>
+                </div>
+                <div class="modal-body">
+                    <span id="score-box">O SCORE DEVERIA ESTAR AQUI</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="col-6 btn-success" data-dismiss="modal"
+                        onclick="location.href = location.href">Jogar Novamente</button>
+                    <button type="button" class="col-6 btn-danger" onclick="exitGame()">Sair</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
