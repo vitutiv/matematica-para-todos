@@ -520,7 +520,7 @@ h5.title {
   cursor: pointer;
 }
 
-p {
+.content-page p {
   text-indent: 1rem;
 }
 
