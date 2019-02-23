@@ -317,6 +317,7 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
 
 .clear-button {
   background: none!important;
+  color: var(--main-black);
   border: none;
   padding: 0!important
 }

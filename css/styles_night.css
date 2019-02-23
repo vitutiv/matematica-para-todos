@@ -62,6 +62,6 @@ a.list-group-item:hover {
     color: var(--main-white) !important
 }
 
-.search-result .theme, .search-result.info {
+.search-result .theme, .search-result.info, .clear-button {
     color: var(--main-white) !important;
 }
