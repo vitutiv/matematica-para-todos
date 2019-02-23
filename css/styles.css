@@ -175,6 +175,12 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
 .start-page .scales .content-wrapper-header {
   background: url("../img/theme_scales.svg");
 }
+.start-page .graphs .content-wrapper-header {
+  background: url("../img/theme_graphs.svg");
+}
+.start-page .quizes .content-wrapper-header {
+  background: url("../img/theme_quizes.svg");
+}
 
 .numbers .content-background, .numbers header, .numbers button, .numbers .bg-theme {
   color: white;

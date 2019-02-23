@@ -7,8 +7,6 @@ viewBox="0 0 181.44 181.44"
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str1 {stroke:white;stroke-width:3.54;stroke-miterlimit:2.61313}
-    .str0 {stroke:white;stroke-width:4.25;stroke-miterlimit:2.61313}
     .fil0 {fill:none}
     .fil1 {fill:#FEFEFE}
    ]]>
@@ -17,11 +15,8 @@ viewBox="0 0 181.44 181.44"
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
   <rect class="fil0" x="-0" y="-0" width="181.44" height="181.44"/>
+  <rect class="fil1" x="120.49" y="45.36" width="15.59" height="75.83"/>
   <path class="fil1" d="M45.36 60.24l75.13 0 0 75.84 -75.13 -0 0 -75.84zm4.25 4.25l67.33 0 0 67.33 -67.33 0 0 -67.33z"/>
-  <path class="fil1" d="M60.95 45.36l75.13 0 0 75.84 -75.13 -0 0 -75.84zm4.25 4.25l67.33 0 0 67.33 -67.33 0 0 -67.33z"/>
-  <path class="fil0 str0" d="M46.07 61.31l15.95 -14.88"/>
-  <path class="fil0 str0" d="M116.94 64.5l15.59 -14.88"/>
-  <path class="fil0 str1" d="M119.78 134.66l15.24 -14.53"/>
-  <path class="fil0 str0" d="M49.61 131.83l15.59 -14.88"/>
+  <rect class="fil1" x="60.24" y="45.36" width="75.84" height="15.59"/>
  </g>
 </svg>
