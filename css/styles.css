@@ -187,7 +187,12 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   background-color: var(--main-red) !important
 }
 
-.numbers .content-color, .content-page.numbers a, .numbers .color-theme {
+.numbers .content-color,
+.content-page.numbers a,
+.numbers .color-theme,
+.content-page.numbers h3,
+.content-page.numbers h4,
+.content-page.numbers h5 {
   color: var(--main-red) !important
 }
 
@@ -195,8 +200,12 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   color: white;
   background-color: var(--main-pink) !important
 }
-
-.operations .content-color, .content-page.operations a, .operations .color-theme {
+.operations .content-color,
+.content-page.operations a,
+.operations .color-theme,
+.content-page.operations h3,
+.content-page.operations h4,
+.content-page.operations h5 {
   color: var(--main-pink) !important
 }
 
@@ -205,7 +214,11 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   background-color: var(--main-deep-purple) !important
 }
 
-.geometry .content-color, .content-page.geometry a {
+.geometry .content-color,
+.content-page.geometry a,
+.content-page.geometry h3,
+.content-page.geometry h4,
+.content-page.geometry h5 {
   color: var(--main-deep-purple) !important
 }
 
@@ -213,7 +226,10 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   background-color: var(--main-indigo) !important
 }
 
-.scales .content-color, .content-page.scales a {
+.scales .content-color, .content-page.scales a,
+.content-page.scales h3,
+.content-page.scales h4,
+.content-page.scales h5 {
   color: var(--main-indigo) !important
 }
 
@@ -221,7 +237,10 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   background-color: var(--main-light-blue) !important
 }
 
-.graphs .content-color, .content-page.graphs a {
+.graphs .content-color, .content-page.graphs a,
+.content-page.graphs h3,
+.content-page.graphs h4,
+.content-page.graphs h5 {
   color: var(--main-light-blue) !important
 }
 
@@ -229,7 +248,11 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   background-color: var(--main-green) !important
 }
 
-.quizes .content-color, .content-page.quizes a {
+.quizes .content-color,
+.content-page.quizes a,
+.content-page.quizes h3,
+.content-page.quizes h4,
+.content-page.quizes h5 {
   color: var(--main-green) !important
 }
 
