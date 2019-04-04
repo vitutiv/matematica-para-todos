@@ -12,6 +12,16 @@
 	<script defer src="js/app/script.js"></script>
 	<script defer src="js/app/homepage.js"></script>
 	<title>Matemática para Todos</title>
+	<style>
+		.str1 {stroke:white;stroke-width:3.54;stroke-miterlimit:2.61313}
+		.str0 {stroke:white;stroke-width:4.25;stroke-miterlimit:2.61313}
+		.fil0 {fill:none}
+		.fil1 {fill:#FEFEFE}
+		svg {
+			width: 12rem;
+			height: 12rem;
+		}
+	</style>
 </head>
 <body class="start-page">
 	<header class="header">
@@ -47,7 +57,9 @@
 				<div id="content-1-collapse" class="collapse">
 					<ul class="expanded-items">
 						<li><a href="numbers/content/intro.html">A história dos números</a></li>
-						<li><a href="numbers/content/numbers.html">Os números</a></li>
+						<li>
+							<a href="numbers/content/numbers.html">Os números</a>
+						</li>
 						<li><a href="numbers/content/decimal.html">Sistema de numeração decimal</a></li>
 						<li><a href="numbers/content/ordem.html">Ordem Crescente e Decrescente</a></li>
 					</ul>
@@ -101,6 +113,16 @@
 		<section class="content geometry">
 			<div class="content-background"></div>
 			<div class="content-wrapper">
+				<div class="d-flex flex-column justify-content-center geometry-animation">
+					<svg class="align-self-center">
+						<path class="fil0 str1" d="M45.36 60.24l75.13 0 0 75.84 -75.13 -0 0 -75.84zm4.25 4.25l67.33 0 0 67.33 -67.33 0 0 -67.33z" />
+						<path class="fil0 str1" d="M60.95 45.36l75.13 0 0 75.84 -75.13 -0 0 -75.84zm4.25 4.25l67.33 0 0 67.33 -67.33 0 0 -67.33z" />
+						<path class="fil0 str0" d="M46.07 61.31l15.95 -14.88" />
+						<path class="fil0 str0" d="M116.94 64.5l15.59 -14.88" />
+						<path class="fil0 str1" d="M119.78 134.66l15.24 -14.53" />
+						<path class="fil0 str0" d="M49.61 131.83l15.59 -14.88" />
+					</svg>
+				</div>
 				<header class="content-wrapper-header">
 					<a data-toggle="collapse" href="#content-3-collapse" role="button" class="trigger" onclick="$(this).find('i').toggleClass('rotated');">
 						<i class="fas fa-plus-circle"></i>
