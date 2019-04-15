@@ -168,10 +168,6 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   background: url("../img/theme_operations.svg");
 }
 
-.start-page .geometry .content-wrapper-header {
-  background: url("../img/theme_geometry.svg");
-}
-
 .start-page .scales .content-wrapper-header {
   background: url("../img/theme_scales.svg");
 }
@@ -209,9 +205,64 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   color: var(--main-pink) !important
 }
 
-.geometry .content-background, .geometry header, .geometry button, .geometry .bg-theme {
+.geometry .content-background, .geometry button, .geometry .bg-theme {
   color: white;
   background-color: var(--main-deep-purple) !important
+}
+.geometry .cube {
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 3s infinite ease-out;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.geometry .cube div {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0);
+  display: block;
+  position: absolute;
+}
+
+.geometry .cube div.top {
+  -webkit-transform: rotateX(90deg);
+  margin-top: -50px;
+}
+
+.geometry .cube div.right {
+  -webkit-transform: rotateY(90deg);
+  margin-left: 50px;
+}
+
+.geometry .cube div.bottom {
+  -webkit-transform: rotateX(-90deg);
+  margin-top: 50px;
+}
+
+.geometry .cube div.left {
+  -webkit-transform: rotateY(-90deg);
+  margin-left: -50px;
+}
+
+.geometry .cube div.front {
+  -webkit-transform: translateZ(50px);
+}
+
+.geometry .cube div.back {
+  -webkit-transform: translateZ(-50px) rotateX(180deg);
+}
+
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotateX(-20deg) rotateY(20deg);}
+  100% {-webkit-transform: rotateX(-20deg) rotateY(740deg);}
 }
 
 .geometry .content-color,
