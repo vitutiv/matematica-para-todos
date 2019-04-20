@@ -213,20 +213,20 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   -webkit-transform-style: preserve-3d;
   -webkit-animation: spin 3s infinite ease-out;
   position: relative;
-  width: 100px;
-  height: 100px;
-  top: 50%;
+  width: 4rem;
+  height: 4rem;
+  top: 4rem;
   left: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
+  margin-left: -2rem;
+  margin-top: -2rem;
 }
 
 .geometry .cube div {
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
   text-align: center;
-  box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 1);
+  box-shadow: inset 0 0 0 .1rem rgba(255, 255, 255, 1);
   background: rgba(255, 255, 255, 0);
   display: block;
   position: absolute;
@@ -234,30 +234,30 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
 
 .geometry .cube div.top {
   -webkit-transform: rotateX(90deg);
-  margin-top: -50px;
+  margin-top: 2rem;
 }
 
 .geometry .cube div.right {
   -webkit-transform: rotateY(90deg);
-  margin-left: 50px;
+  margin-left: 2rem;
 }
 
 .geometry .cube div.bottom {
   -webkit-transform: rotateX(-90deg);
-  margin-top: 50px;
+  margin-top: 2rem;
 }
 
 .geometry .cube div.left {
   -webkit-transform: rotateY(-90deg);
-  margin-left: -50px;
+  margin-left: -2rem;
 }
 
 .geometry .cube div.front {
-  -webkit-transform: translateZ(50px);
+  -webkit-transform: translateZ(2rem);
 }
 
 .geometry .cube div.back {
-  -webkit-transform: translateZ(-50px) rotateX(180deg);
+  -webkit-transform: translateZ(-2rem) rotateX(180deg);
 }
 
 @-webkit-keyframes spin {
@@ -434,10 +434,11 @@ a.trigger {
 .content-background {
   position: absolute;
   z-index: -1;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%
 }
-
 .content-wrapper {
   padding: 0 1rem 0 1rem;
 }
