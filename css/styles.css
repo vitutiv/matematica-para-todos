@@ -70,7 +70,8 @@
 
 @keyframes resize-graph {
   0% {
-
+    height: 1rem;
+    top: 4rem;
   }
   50% {
     height: 5rem;
@@ -81,7 +82,22 @@
     top: 4rem;
   }
 }
-
+@keyframes resize-ruler{
+    0%{
+        width: 10rem;
+    }
+    100%{
+        width: 2rem;
+    }
+}
+@keyframes move-ruler-markings {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
 .geometry .cube {
   transform-style: preserve-3d;
   animation: spin 5s infinite alternate ease-in-out;
@@ -200,14 +216,15 @@
   width: 100%;
   top: 1.5rem;
 }
-
+.bar-1,.bar-2,.bar-3{
+    position: absolute;
+    background: transparent;
+    border: .1rem solid white;
+    transform: translateX(-50%);
+    width: 2.5rem;
+}
 .bar-1 {
-  position: absolute;
   left: calc(50% - 3rem);
-  transform: translateX(-50%);
-  background: transparent;
-  border: .1rem solid white;
-  width: 2.5rem;
   height: 2.5rem;
   top: 2.5rem;
   animation: resize-graph 2s infinite alternate linear;
@@ -215,24 +232,15 @@
 }
 
 .bar-2 {
-  position: absolute;
   left: calc(50%);
-  transform: translateX(-50%);
-  background: transparent;
-  border: .1rem solid white;
-  width: 2.5rem;
-  height: 5rem;
-  top: 0;
+  height: 4rem;
+  top: 1rem;
   animation: resize-graph 2s infinite alternate linear;
 }
 
 .bar-3 {
   position: absolute;
   left: calc(50% + 3rem);
-  transform: translateX(-50%);
-  background: transparent;
-  border: .1rem solid white;
-  width: 2.5rem;
   height: 3rem;
   top: 2rem;
   animation: resize-graph 2s infinite alternate linear;
@@ -243,12 +251,17 @@
   top: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 50%;
+  width: 10rem;
+  text-align: center;
   height: 3rem;
   background: transparent;
   border: .1rem solid #fff;
+  overflow: hidden;
+  animation: resize-ruler 1s infinite alternate linear;
 }
-
+.ruler-markings{
+    animation: move-ruler-markings 2s infinite alternate linear;
+}
 a {
   font-size: 1.1em;
 }
