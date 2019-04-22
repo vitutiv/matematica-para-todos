@@ -1,11 +1,11 @@
 @charset "utf-8";
 @font-face {
-  font-family: 'Boogaloo', sans-serif;
-  src: url('../ttf/Boogaloo-Regular.ttf') format('truetype');
+  font-family: 'Boogaloo';
+  src: url('../ttf/Boogaloo-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   src: url('../ttf/OpenSans-Regular.ttf') format('truetype');
 }
 
@@ -151,57 +151,42 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   width: auto;
   z-index: -1
 ""
-
 }
 */
-.start-page .content-wrapper-header{
+
+.start-page .content-wrapper-header {
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  background-size : contain !important;
-}
-
-.start-page .numbers .content-wrapper-header {
-  background: url("../img/theme_numbers.svg");
-}
-
-.start-page .operations .content-wrapper-header {
-  background: url("../img/theme_operations.svg");
+  background-size: contain !important;
 }
 
 .start-page .scales .content-wrapper-header {
   background: url("../img/theme_scales.svg");
 }
+
 .start-page .graphs .content-wrapper-header {
   background: url("../img/theme_graphs.svg");
 }
+
 .start-page .quizes .content-wrapper-header {
   background: url("../img/theme_quizes.svg");
 }
 
-.numbers .content-background, .numbers header, .numbers button, .numbers .bg-theme {
+.numbers .content-background, .numbers button, .numbers .bg-theme {
   color: white;
   background-color: var(--main-red) !important
 }
 
-.numbers .content-color,
-.content-page.numbers a,
-.numbers .color-theme,
-.content-page.numbers h3,
-.content-page.numbers h4,
-.content-page.numbers h5 {
+.numbers .content-color, .content-page.numbers a, .numbers .color-theme, .content-page.numbers h3, .content-page.numbers h4, .content-page.numbers h5 {
   color: var(--main-red) !important
 }
 
-.operations .content-background, .operations header, .operations button, .operations .bg-theme {
+.operations .content-background, .operations button, .operations .bg-theme {
   color: white;
   background-color: var(--main-pink) !important
 }
-.operations .content-color,
-.content-page.operations a,
-.operations .color-theme,
-.content-page.operations h3,
-.content-page.operations h4,
-.content-page.operations h5 {
+
+.operations .content-color, .content-page.operations a, .operations .color-theme, .content-page.operations h3, .content-page.operations h4, .content-page.operations h5 {
   color: var(--main-pink) !important
 }
 
@@ -209,9 +194,10 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   color: white;
   background-color: var(--main-deep-purple) !important
 }
+
 .geometry .cube {
-  -webkit-transform-style: preserve-3d;
-  -webkit-animation: spin 3s infinite ease-out;
+  transform-style: preserve-3d;
+  animation: spin 5s infinite alternate ease-in-out;
   position: relative;
   width: 4rem;
   height: 4rem;
@@ -233,43 +219,92 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
 }
 
 .geometry .cube div.top {
-  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
   margin-top: 2rem;
 }
 
 .geometry .cube div.right {
-  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
   margin-left: 2rem;
 }
 
 .geometry .cube div.bottom {
-  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
   margin-top: 2rem;
 }
 
 .geometry .cube div.left {
-  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
   margin-left: -2rem;
 }
 
 .geometry .cube div.front {
-  -webkit-transform: translateZ(2rem);
+  transform: translateZ(2rem);
 }
 
 .geometry .cube div.back {
-  -webkit-transform: translateZ(-2rem) rotateX(180deg);
+  transform: translateZ(-2rem) rotateX(180deg);
+}
+
+.number-bounce {
+  font-family: Boogaloo;
+  font-size: 5rem;
+  -webkit-text-stroke: .2rem white;
+  color: transparent;
+  text-align: center;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.number-bounce .number-1 {
+  position: absolute;
+  left: 50%;
+  transition: transform .5s ease-in-out;
+  transform: translate(-50%, -10%);
+  left: calc(50% - 4rem);
+  animation: bounce 3s infinite alternate ease-in-out;
+  animation-delay: .5s;
+}
+
+.number-bounce .number-2 {
+  position: absolute;
+  left: 50%;
+  transition: transform .5s ease-in-out;
+  transform: translate(-50%, -10%);
+  animation: bounce 3s infinite alternate ease-in-out;
+}
+
+.number-bounce .number-3 {
+  position: absolute;
+  left: calc(50% + 4rem);
+  transition: transform .5s ease-in-out;
+  transform: translate(-50%, -10%);
+  animation: bounce 3s infinite alternate ease-in-out;
+  animation-delay: 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -10%);
+  }
+  100% {
+    transform: translate(-50%, 10%);
+  }
 }
 
 @-webkit-keyframes spin {
-  0% {-webkit-transform: rotateX(-20deg) rotateY(20deg);}
-  100% {-webkit-transform: rotateX(-20deg) rotateY(740deg);}
+  0% {
+    -webkit-transform: rotateX(-20deg) rotateY(20deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-20deg) rotateY(740deg);
+  }
 }
 
-.geometry .content-color,
-.content-page.geometry a,
-.content-page.geometry h3,
-.content-page.geometry h4,
-.content-page.geometry h5 {
+.geometry .content-color, .content-page.geometry a, .content-page.geometry h3, .content-page.geometry h4, .content-page.geometry h5 {
   color: var(--main-deep-purple) !important
 }
 
@@ -277,10 +312,7 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   background-color: var(--main-indigo) !important
 }
 
-.scales .content-color, .content-page.scales a,
-.content-page.scales h3,
-.content-page.scales h4,
-.content-page.scales h5 {
+.scales .content-color, .content-page.scales a, .content-page.scales h3, .content-page.scales h4, .content-page.scales h5 {
   color: var(--main-indigo) !important
 }
 
@@ -288,10 +320,7 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   background-color: var(--main-light-blue) !important
 }
 
-.graphs .content-color, .content-page.graphs a,
-.content-page.graphs h3,
-.content-page.graphs h4,
-.content-page.graphs h5 {
+.graphs .content-color, .content-page.graphs a, .content-page.graphs h3, .content-page.graphs h4, .content-page.graphs h5 {
   color: var(--main-light-blue) !important
 }
 
@@ -299,11 +328,7 @@ OBS: O LOGO DO INSTITUTO FEDERAL NÃO PODE SER UTILIZADO COMO MARCA D'ÁGUA.
   background-color: var(--main-green) !important
 }
 
-.quizes .content-color,
-.content-page.quizes a,
-.content-page.quizes h3,
-.content-page.quizes h4,
-.content-page.quizes h5 {
+.quizes .content-color, .content-page.quizes a, .content-page.quizes h3, .content-page.quizes h4, .content-page.quizes h5 {
   color: var(--main-green) !important
 }
 
@@ -439,13 +464,15 @@ a.trigger {
   width: 100%;
   height: 100%
 }
+
 .content-wrapper {
   padding: 0 1rem 0 1rem;
 }
 
-.expanded-items li{
+.expanded-items li {
   padding-left: 2rem !important;
 }
+
 .content-wrapper-header {
   padding-bottom: 1rem;
   height: 10rem !important;
@@ -479,14 +506,13 @@ a.trigger {
 }
 
 .trigger i {
-
   /*
   position: absolute;
   margin-left: -2.2rem
 */
-
   margin-right: 1rem;
 }
+
 .trigger .rotated {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg)
@@ -626,4 +652,3 @@ ul.styled-list li {
 .bg-warning {
   color: black !important;
 }
-
