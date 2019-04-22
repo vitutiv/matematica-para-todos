@@ -84,7 +84,7 @@
 }
 @keyframes resize-ruler{
     0%{
-        width: 10rem;
+        width: 15rem;
     }
     100%{
         width: 2rem;
@@ -251,7 +251,7 @@
   top: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 10rem;
+  width: 15rem;
   text-align: center;
   height: 3rem;
   background: transparent;
@@ -260,7 +260,8 @@
   animation: resize-ruler 1s infinite alternate linear;
 }
 .ruler-markings{
-    animation: move-ruler-markings 2s infinite alternate linear;
+    color: #fff;
+    animation: move-ruler-markings 3s infinite alternate linear;
 }
 a {
   font-size: 1.1em;
