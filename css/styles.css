@@ -262,10 +262,10 @@
 .ruler-markings{
   position: absolute;
   top: 0;
-  left: 0;
+  left: -.15rem;
   color: #fff;
   background: url('../img/scales_preset.svg') top left repeat-x;
-  animation: move-ruler-markings 5s infinite alternate linear;
+  /*animation: move-ruler-markings 5s infinite alternate linear;*/
   margin-top: -.15rem;
   width: 100vw;
   height: 100%;
